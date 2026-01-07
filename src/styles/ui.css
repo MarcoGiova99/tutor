@@ -1,0 +1,154 @@
+/* ==========================================================================
+   UI DESIGN SYSTEM & COMPONENTS
+   ========================================================================== */
+
+/* --- 1. VARIABLES & THEME --- */
+:root {
+  --bg: #f6f7fb;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  
+  --border: rgba(15, 23, 42, 0.10);
+  --border2: rgba(15, 23, 42, 0.14);
+  
+  /* DEFAULT THEME: ACCOUNTING (GREEN) */
+  --accent: #22c55e;       /* Green 500 */
+  --accent2: #16a34a;      /* Green 600 */
+  --accent-light: #dcfce7; /* Green 100 */
+  --danger: #ef4444;       /* Red 500 */
+  
+  /* Background Blobs Colors (Default) */
+  --blob-1: #dbeafe; /* Blueish */
+  --blob-2: #dcfce7; /* Greenish */
+
+  --shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+  --radius: 18px;
+  
+  --btnDark: #0f172a;
+  --btnDarkHover: #1e293b;
+}
+
+/* --- CLOUD THEME OVERRIDE --- */
+/* Questa classe sovrascrive i colori quando attiva */
+.theme-cloud {
+  --accent: #2563eb;       /* Blue 600 */
+  --accent2: #1e40af;      /* Blue 800 */
+  --accent-light: #dbeafe; /* Blue 100 */
+  
+  /* Background Blobs Colors (Cloud) */
+  --blob-1: #e0e7ff; /* Indigo-ish */
+  --blob-2: #bfdbfe; /* Blueish */
+}
+
+/* --- 2. GLOBAL RESET --- */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+a { color: inherit; text-decoration: none; }
+input, textarea, button { font-family: inherit; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text);
+  /* Sfondo con variabili dinamiche */
+  background:
+    radial-gradient(1200px 600px at 20% 0%, var(--blob-1) 0%, transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, var(--blob-2) 0%, transparent 55%),
+    var(--bg);
+  background-attachment: fixed;
+  transition: background 0.5s ease; /* Transizione morbida tra temi */
+}
+
+/* --- 3. LAYOUT --- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+  text-align: left;
+}
+
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.sep { height: 12px; }
+.divider { height: 1px; background: var(--border); margin: 20px 0; width: 100%; }
+
+/* --- 4. TYPOGRAPHY --- */
+.bigTitle { margin: 0; font-size: 28px; font-weight: 900; letter-spacing: -0.5px; color: var(--text); }
+.sectionTitle { margin: 0 0 12px; font-size: 20px; font-weight: 800; letter-spacing: -0.3px; }
+.cardTitle { margin: 0 0 10px; font-size: 16px; font-weight: 700; }
+.muted { color: var(--muted); font-size: 14px; }
+
+/* --- 5. COMPONENT: CARD --- */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* --- 6. COMPONENT: BUTTONS --- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 16px; border-radius: 14px; font-weight: 700; font-size: 14px;
+  cursor: pointer; border: 1px solid transparent; transition: all 0.2s;
+}
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btnPrimary {
+  background: var(--btnDark); color: #fff;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.15);
+}
+.btnPrimary:hover { background: var(--btnDarkHover); transform: translateY(-1px); }
+
+.btnGhost {
+  background: #fff; border-color: var(--border2); color: var(--text);
+}
+.btnGhost:hover { background: #f8fafc; border-color: var(--muted); }
+
+.btnDanger {
+  background: #fef2f2; color: var(--danger); border-color: rgba(239, 68, 68, 0.2);
+}
+.btnDanger:hover { background: #fee2e2; }
+
+/* --- 7. COMPONENT: INPUTS --- */
+.field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+
+.input, .textarea {
+  width: 100%; padding: 12px 14px; border-radius: 14px;
+  border: 1px solid var(--border2); outline: none; background: #fff;
+  font-size: 15px; transition: all 0.2s;
+}
+.input:focus, .textarea:focus {
+  border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-light);
+}
+.textarea { min-height: 100px; resize: vertical; }
+
+/* --- 8. COMPONENT: NAVIGATION (TOPBAR) --- */
+.topbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 20px; margin-bottom: 24px; border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.topbar__brand { font-size: 20px; font-weight: 900; }
+
+.topbar__tabs { display: flex; gap: 6px; background: rgba(15,23,42,0.05); padding: 4px; border-radius: 14px; }
+.tab-inactive { padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.tab-inactive:hover { background: rgba(255,255,255,0.5); color: var(--text); }
+.tab-active { 
+  padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 700; 
+  background: #fff; color: var(--accent2); box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+}
+
+/* --- 9. UTILS & ANIMATIONS --- */
+.list { display: grid; gap: 10px; }
+.badge { display: inline-flex; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; background: #e2e8f0; color: #475569; }
+.toastErr { margin-top: 12px; padding: 12px; border-radius: 12px; background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; font-size: 13px; }
+
+@keyframes slideDown { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }

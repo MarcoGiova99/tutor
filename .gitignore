@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Production build
+dist/
+dist-ssr/
+
+# Editor directories and files
+.vscode/*
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# LOCAL ENV FILES (Importante!)
+.env
+.env.local
+.env.*.local
