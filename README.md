@@ -104,46 +104,6 @@ firebase deploy --only hosting
 * **Styling**: CSS Modules / TailwindCSS
 * **Development Philosophy**: **Vibe Coding** (AI-Assisted Development for rapid iteration)
 
----
-
-## 🚀 Getting Started
-
-Follow these steps to set up the project locally.
-
-### Prerequisites
-
-* Node.js (v16 or higher)
-* npm or yarn
-* A Firebase project created on the [Firebase Console](https://console.firebase.google.com/)
-
-### Installation
-
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/your-username/tutor-tracker.git](https://github.com/your-username/tutor-tracker.git)
-    cd tutor-tracker
-    ```
-
-2.  **Install dependencies**
-    ```bash
-    npm install
-    ```
-
-3.  **Configure Environment Variables**
-    Create a `.env` file in the root directory and add your Firebase config keys:
-    ```env
-    VITE_API_KEY=your_api_key
-    VITE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-    VITE_PROJECT_ID=your_project_id
-    VITE_STORAGE_BUCKET=your_project_id.appspot.com
-    VITE_MESSAGING_SENDER_ID=your_sender_id
-    VITE_APP_ID=your_app_id
-    ```
-
-4.  **Run the development server**
-    ```bash
-    npm run dev
-    ```
 
 ---
 
