@@ -165,15 +165,19 @@ async function main() {
         IMPORTANT REQUIREMENTS:
         1. **SOURCE**: The question must be derived STRICTLY from the provided excerpt.
         2. **DIFFICULTY**: Questions must be **HARD/COMPLEX**. Do NOT ask for simple definitions.
-        3. **TYPE**: Focus on **APPLICATION**, **ANALYSIS**, or **REASONING** based on the excerpt.
-        4. **LANGUAGE**: Professional, academic **ITALIAN**. **CHECK SPELLING CAREFULLY** (Do not invent words like "arsitezione", use "architettura").
-        5. Return ONLY a VALID JSON ARRAY containing 1 object.
-
+        3. **TYPE**: Focus on **APPLICATION**, **ANALYSIS**, or **REASONING**.
+        4. **PHRASING**: Must be a **DIRECT QUESTION** ending with a question mark. 
+           - INVALID: "La virtualizzazione è..." (Statement)
+           - VALID: "Qual è il principale vantaggio della virtualizzazione...?"
+           - Start with: "Quale", "Cosa", "Come", "Perché", "In che modo".
+        5. **LANGUAGE**: Professional, academic **ITALIAN**. Check grammar and spelling (e.g., "Qual è", not "Qual'è").
+        6. Return ONLY a VALID JSON ARRAY containing 1 object.
 
         JSON Format:
         [
           {
-            "text": "...",
+            "type": "quiz",
+            "text": "Qual è ...?",
             "options": ["...", "...", "...", "..."],
             "correctIndex": 0,
             "explanation": "..."
@@ -215,6 +219,9 @@ async function main() {
           if (batchQuestions.length === 0) throw new Error("No questions returned");
 
           const q = batchQuestions[0];
+          // Enforce type="quiz"
+          if (!q.type) q.type = "quiz";
+
           if (!q.text || !q.options || !Array.isArray(q.options) || q.options.length < 2) {
             // If invalid options structure, save debug and throw
             const debugPath = path.join(__dirname, `debug_invalid_${i}_${attempts}.txt`);
