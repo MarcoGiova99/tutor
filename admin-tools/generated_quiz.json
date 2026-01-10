@@ -1,25 +1,67 @@
 [
   {
     "type": "quiz",
-    "text": "Qual è il principale inconveniente della necessità di un sistema di gestione separato per una Type 1 hypervisor?",
+    "difficulty": "easy",
+    "text": "Qualè una istanza di spazio utente isolato all'interno di un OS?",
     "options": [
-      "Aumento della sicurezza",
-      "Latenza e riduzione della prestazione",
-      "Maggiore efficienza"
+      "Un contenedere",
+      "Una macchina virtuale",
+      "Un sistema operativo",
+      "Un'applicazione"
     ],
-    "correctIndex": 1,
-    "explanation": "La necessità di un sistema di gestione separato per una Type 1 hypervisor può introdurre latenza e ridurre la prestazione a causa dell'accesso via host OS"
+    "correctIndex": 0,
+    "explanation": "L'istante di spazio utente isolato all'interno di un OS è definita come una \"container\" o un contenedere, che è una copia isolata di un sistema operativo."
   },
   {
     "type": "quiz",
-    "text": "Qual è il principale vantaggio della virtualizzazione desktop secondo la descrizione fornita?",
+    "difficulty": "medium",
+    "text": "Qual è il beneficio principale della virtualizzazione dei server?",
     "options": [
-      "Fornire accesso a una vasta gamma di OS senza installarli sul dispositivo",
-      "Sostituire l'hardware fisico con software per gestire il network",
-      "Concedere all'utente il controllo totale su più OS sull'apparato",
-      "Ridurre significativamente i costi dell'macchinario"
+      "Immediata ripresa da disastri",
+      "Miglioramento dell'efficienza del hardware",
+      "Riduzione dei costi",
+      "Semplicità nell'amministrazione"
+    ],
+    "correctIndex": 1,
+    "explanation": "La virtualizzazione dei server consente di migliorare l'efficienza del hardware, consentendo di utilizzare meglio le risorse fisiche disponibili."
+  },
+  {
+    "type": "quiz",
+    "difficulty": "hard",
+    "text": "Qual è il beneficio principale dell'utilizzo della virtualizzazione dei server per la consolidazione dei server?",
+    "options": [
+      "L'aggiornamento dei software dei server",
+      "Il miglioramento del rendimento dei server",
+      "L'aumento dell'utilizzo efficiente dei dispositivi fisici",
+      "La riduzione dei costi energetici"
+    ],
+    "correctIndex": 2,
+    "explanation": "La virtualizzazione dei server consente di aumentare l'utilizzo efficiente dei dispositivi fisici migliorando l'hardware utilizzato, riducendo quindi i costi energetici."
+  },
+  {
+    "type": "quiz",
+    "difficulty": "easy",
+    "text": "Quali sono le caratteristiche di un Type 1 Hypervisor?",
+    "options": [
+      "Rende il posto a un sistema operativo host",
+      "Per gestire sistemi operativi ospiti in modo indipendente",
+      "Scadono direttamente al hardware",
+      "Gestiscono risorse VM in modo parallelo"
     ],
     "correctIndex": 0,
-    "explanation": "Fornire accesso a una vasta gamma di OS senza installarli sul dispositivo"
+    "explanation": "Un Type 1 Hypervisor, anche noto come native o bare metal hypervisor, si esegue direttamente sul hardware del host per gestire sistemi operativi ospiti. Essendo un sistema operativo integrato al hardware, assume il posto di un sistema operativo host e le risorse VM vengono assegnate direttamente al hardware dallo hypervisor."
+  },
+  {
+    "type": "quiz",
+    "difficulty": "medium",
+    "text": "Qual è il tipo di hipervisor che esegue direttamente sul hardware del host per gestire sistemi operativi ospiti?",
+    "options": [
+      "A",
+      "Un ipervisor di tipo 2",
+      "C",
+      "Esegue un sistema operativo completo"
+    ],
+    "correctIndex": 0,
+    "explanation": "È un ipervisor di tipo 1 che esegue direttamente sul hardware del host, sostituendo il sistema operativo del host e gestendo le risorse VM direttamente sul hardware."
   }
 ]
