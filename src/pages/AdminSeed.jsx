@@ -13,9 +13,9 @@ export default function AdminSeed() {
   const [jsonInput, setJsonInput] = useState("");
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
-  
+
   // MODIFICA: Stato per i Tab (Default su Cloud perché è quello dinamico)
-  const [activeTab, setActiveTab] = useState('cloud'); 
+  const [activeTab, setActiveTab] = useState('cloud');
 
   // --- 1. INITIALIZATION: LOAD BACKUP HISTORY ---
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function AdminSeed() {
 
       // Batch Write
       const batch = writeBatch(db);
-      
+
       parsedQuestions.forEach((q) => {
         const docRef = doc(collection(db, "questions")); // Auto-ID
         batch.set(docRef, {
@@ -62,7 +62,7 @@ export default function AdminSeed() {
           createdAt: new Date()
         });
       });
-      
+
       await batch.commit();
 
       // Backup Entry
@@ -76,8 +76,8 @@ export default function AdminSeed() {
       });
 
       setStatus(`✅ SUCCESS! Caricate ${parsedQuestions.length} domande in ${levelTitle} (${activeTab}).`);
-      setJsonInput(""); 
-      fetchHistory();   
+      setJsonInput("");
+      fetchHistory();
 
     } catch (e) {
       console.error(e);
@@ -108,24 +108,23 @@ export default function AdminSeed() {
         return;
       }
 
-      // Firestore Batch limit is 500, potrebbero servire batch multipli
-      const batch = writeBatch(db);
-      let batchCount = 0;
-      
-      snap.docs.forEach((doc) => {
-        batch.delete(doc.ref);
-        batchCount++;
-        
-        // Esegui il batch ogni 500 operazioni
-        if (batchCount >= 500) {
-          batch.commit();
-          console.log(`Eseguito batch con ${batchCount} operazioni`);
-        }
-      });
+      const deleteBatch = async (querySnapshot) => {
+        const batchSize = 500;
+        const chunks = [];
 
-      if (batchCount > 0 && batchCount < 500) {
-        await batch.commit();
-      }
+        for (let i = 0; i < querySnapshot.docs.length; i += batchSize) {
+          chunks.push(querySnapshot.docs.slice(i, i + batchSize));
+        }
+
+        for (const chunk of chunks) {
+          const batch = writeBatch(db);
+          chunk.forEach(doc => batch.delete(doc.ref));
+          await batch.commit();
+          console.log(`Deleted batch of ${chunk.length} docs`);
+        }
+      };
+
+      await deleteBatch(snap);
 
       setStatus(`✅ Cancellate ${snap.docs.length} domande TOTALI dal database!`);
       setTimeout(() => setStatus("Ready."), 3000);
@@ -176,7 +175,7 @@ export default function AdminSeed() {
     setStatus(`♻️ Backup del ${new Date(backupItem.createdAt.seconds * 1000).toLocaleDateString()} ripristinato.`);
     // Se il backup era di un altro corso, switchiamo tab
     if (backupItem.courseId && backupItem.courseId !== activeTab) {
-        setActiveTab(backupItem.courseId);
+      setActiveTab(backupItem.courseId);
     }
     window.scrollTo(0, 0);
   };
@@ -187,40 +186,40 @@ export default function AdminSeed() {
 
   return (
     <div className="container" style={{ padding: "40px 20px", maxWidth: 900, margin: '0 auto' }}>
-      
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom: 20}}>
+
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
         <h1>🛠️ Admin Seeding Tool</h1>
       </div>
 
       {/* --- TABS DI SELEZIONE CORSO --- */}
       <div style={{ display: 'flex', gap: 10, marginBottom: 20, borderBottom: '2px solid #e2e8f0' }}>
         <button
-            onClick={() => setActiveTab('cloud')}
-            style={{
-                padding: '10px 20px',
-                border: 'none',
-                background: activeTab === 'cloud' ? '#eff6ff' : 'transparent',
-                color: activeTab === 'cloud' ? '#2563eb' : '#64748b',
-                fontWeight: 'bold',
-                borderBottom: activeTab === 'cloud' ? '3px solid #2563eb' : '3px solid transparent',
-                cursor: 'pointer'
-            }}
+          onClick={() => setActiveTab('cloud')}
+          style={{
+            padding: '10px 20px',
+            border: 'none',
+            background: activeTab === 'cloud' ? '#eff6ff' : 'transparent',
+            color: activeTab === 'cloud' ? '#2563eb' : '#64748b',
+            fontWeight: 'bold',
+            borderBottom: activeTab === 'cloud' ? '3px solid #2563eb' : '3px solid transparent',
+            cursor: 'pointer'
+          }}
         >
-            ☁️ Cloud Computing
+          ☁️ Cloud Computing
         </button>
         <button
-            onClick={() => setActiveTab('accounting')}
-            style={{
-                padding: '10px 20px',
-                border: 'none',
-                background: activeTab === 'accounting' ? '#fef2f2' : 'transparent',
-                color: activeTab === 'accounting' ? '#991b1b' : '#64748b',
-                fontWeight: 'bold',
-                borderBottom: activeTab === 'accounting' ? '3px solid #991b1b' : '3px solid transparent',
-                cursor: 'pointer'
-            }}
+          onClick={() => setActiveTab('accounting')}
+          style={{
+            padding: '10px 20px',
+            border: 'none',
+            background: activeTab === 'accounting' ? '#fef2f2' : 'transparent',
+            color: activeTab === 'accounting' ? '#991b1b' : '#64748b',
+            fontWeight: 'bold',
+            borderBottom: activeTab === 'accounting' ? '3px solid #991b1b' : '3px solid transparent',
+            cursor: 'pointer'
+          }}
         >
-            📚 Contabilità
+          📚 Contabilità
         </button>
       </div>
 
@@ -231,7 +230,7 @@ export default function AdminSeed() {
 
       {/* JSON INPUT AREA */}
       <div style={{ marginBottom: 30 }}>
-        <label style={{fontWeight:'bold', display:'block', marginBottom: 8}}>1. Incolla JSON (Generato da AI):</label>
+        <label style={{ fontWeight: 'bold', display: 'block', marginBottom: 8 }}>1. Incolla JSON (Generato da AI):</label>
         <textarea
           value={jsonInput}
           onChange={(e) => setJsonInput(e.target.value)}
@@ -245,10 +244,10 @@ export default function AdminSeed() {
 
       {/* TARGET SELECTION GRID */}
       <div style={{ marginBottom: 40 }}>
-        <label style={{fontWeight:'bold', display:'block', marginBottom: 15}}>
-            2. Seleziona Livello {activeTab === 'cloud' ? 'Cloud' : 'Contabilità'}:
+        <label style={{ fontWeight: 'bold', display: 'block', marginBottom: 15 }}>
+          2. Seleziona Livello {activeTab === 'cloud' ? 'Cloud' : 'Contabilità'}:
         </label>
-        
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 15 }}>
           {/* MAPPIAMO LA LISTA CORRETTA IN BASE AL TAB */}
           {ROADMAPS[activeTab].map((level) => (
@@ -276,15 +275,15 @@ export default function AdminSeed() {
                 e.target.style.boxShadow = 'none';
               }}
             >
-              <span style={{fontSize: 24, marginBottom: 5}}>{level.icon}</span>
-              <span style={{fontSize: 14, fontWeight: 'bold'}}>{level.title}</span>
-              <span style={{fontSize: 10, opacity: 0.7, marginTop: 4}}>{level.id}</span>
+              <span style={{ fontSize: 24, marginBottom: 5 }}>{level.icon}</span>
+              <span style={{ fontSize: 14, fontWeight: 'bold' }}>{level.title}</span>
+              <span style={{ fontSize: 10, opacity: 0.7, marginTop: 4 }}>{level.id}</span>
             </button>
           ))}
         </div>
       </div>
 
-      <hr style={{margin: "40px 0", borderColor: "#e2e8f0"}}/>
+      <hr style={{ margin: "40px 0", borderColor: "#e2e8f0" }} />
 
       {/* DANGER ZONE */}
       <div style={{ marginTop: 40, padding: 20, background: '#fef2f2', borderRadius: 12, border: '2px solid #fca5a5' }}>
@@ -292,21 +291,21 @@ export default function AdminSeed() {
         <p style={{ margin: '0 0 15px 0', fontSize: 13, color: '#7f1d1d' }}>
           Azioni irreversibili sul database. Usare con estrema cautela.
         </p>
-        
+
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-          <button 
+          <button
             onClick={handleDeleteAllDatabase}
             className="btn"
-            style={{background: '#991b1b', color: 'white', fontWeight: 'bold', fontSize: 12}}
+            style={{ background: '#991b1b', color: 'white', fontWeight: 'bold', fontSize: 12 }}
             disabled={loading}
           >
             💥 Cancella TUTTO il DB
           </button>
-          
-          <button 
+
+          <button
             onClick={handleDeleteActiveCourse}
             className="btn"
-            style={{background: '#dc2626', color: 'white', fontWeight: 'bold', fontSize: 12}}
+            style={{ background: '#dc2626', color: 'white', fontWeight: 'bold', fontSize: 12 }}
             disabled={loading}
           >
             🗑️ Cancella solo {activeTab === 'cloud' ? 'Cloud' : 'Contabilità'}
@@ -317,27 +316,27 @@ export default function AdminSeed() {
       {/* HISTORY */}
       <div>
         <h3>📂 Storico Upload</h3>
-        <div style={{display:'flex', flexDirection:'column', gap: 10}}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
           {history.map((item) => (
             <div key={item.id} style={{
               display: 'flex', justifyContent: 'space-between', alignItems: 'center',
               padding: 15, background: 'white', border: '1px solid #e2e8f0', borderRadius: 8
             }}>
               <div>
-                <div style={{fontWeight: 'bold', fontSize: 16, display: 'flex', alignItems: 'center', gap: 8}}>
+                <div style={{ fontWeight: 'bold', fontSize: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
                   {item.courseId === 'cloud' ? '☁️' : '📚'} {item.levelTitle}
                 </div>
-                <div style={{fontSize: 12, color: '#64748b', marginTop: 4}}>
+                <div style={{ fontSize: 12, color: '#64748b', marginTop: 4 }}>
                   ID: {item.levelId} • {new Date(item.createdAt?.seconds * 1000).toLocaleString()} • {item.count} domande
                 </div>
               </div>
 
-              <button 
-                  onClick={() => restoreBackup(item)}
-                  className="btn btnGhost"
-                  style={{fontSize: 12, border: '1px solid #cbd5e1'}}
-                >
-                  ↩️ Restore
+              <button
+                onClick={() => restoreBackup(item)}
+                className="btn btnGhost"
+                style={{ fontSize: 12, border: '1px solid #cbd5e1' }}
+              >
+                ↩️ Restore
               </button>
             </div>
           ))}

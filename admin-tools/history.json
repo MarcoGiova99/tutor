@@ -1,0 +1,1074 @@
+[
+  {
+    "text": "Come comprendere le basi della programmazione in computer",
+    "options": [
+      "Informatore di rete",
+      "Sistema operativo",
+      "Architetto del sistema informatico",
+      "Codice di programmazione"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il software è un insieme di programmi che eseguono le attività di un sistema computer."
+  },
+  {
+    "text": "Che cosa è un sistema di computer architettonico?",
+    "options": [
+      "Un software",
+      "Un hardware",
+      "Un software e il hardware",
+      "Un'esperienza utente"
+    ],
+    "correctIndex": 0,
+    "explanation": "Un sistema di computer architettonico è un insieme di componenti che lavorano insieme per eseguire le operazioni di un computer. Il hardware rappresenta gli elementi fisici del computer, mentre il software rappresenta i programmi utilizzati per eseguirli."
+  },
+  {
+    "text": "Qual è la differenza tra hardware e software nel contesto della computer architecture?",
+    "options": [
+      "Hardware è il sistema di base dei componenti fisici del computer",
+      "Software è un programma che elabora i dati",
+      "Golftheman/ CC BY-SA (https://creativecommons.org/licenses/by- sa/3.0) ",
+      "Software e hardware sono due aspetti diversi della computer architecture"
+    ],
+    "correctIndex": 1,
+    "explanation": "La differenza principale tra hardware e software è che il hardware è lo strumento fisico che consente di eseguire le istruzioni dei programmi, mentre il software è la serie di programmi e linguaggi di programmazione utilizzati per controllare e interagire con il sistema."
+  },
+  {
+    "text": "Domanda...",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "explanation": "Il sistema operativo coordina l'attività tra gli apparati e la hardware."
+  },
+  {
+    "text": "Domanda 1:",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "explanation": "I programmi sono composti da un insieme di sequenze di istruzioni che vengono eseguite su un computer per raggiungere gli obiettivi."
+  },
+  {
+    "text": "Domanda...",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il sistema di gestione dei file è un'unità fondamentale dell'architettura di computer. Lavora insieme agli strumenti di applicazione per fornire all'utente gli accessi ai dati."
+  },
+  {
+    "text": "Qual è la caratteristica principale dell'hardware in un computer?",
+    "options": [
+      "La scheda grafica",
+      "Il processore",
+      "La memoria RAM",
+      "Il disco rigido"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'hardware si occupa di componenti fisici che rendono il funzionamento del computer."
+  },
+  {
+    "text": "Qual è il concetto di virtualizzazione?",
+    "options": [
+      "Hardware virtuale",
+      "Software virtuale",
+      "Simulazione hardware-softwaristica"
+    ],
+    "correctIndex": 0,
+    "explanation": "La virtualizzazione è un concetto che si riferisce all'idea di creare un ambiente di esecuzione di software su hardware diverso, senza modifiche fisiche. "
+  },
+  {
+    "text": "Qual è il più importante strumento di controlli per un sistema operativo?",
+    "options": [
+      "Controllo della memoria",
+      "Controllatore di processi",
+      "Controllo dei dati"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il controllo dei dati è l'insieme dei passaggi necessari per mantenere e proteggere i dati presenti in un sistema, garantendo la loro integrità e sicurezza. Ciò include l'autenticazione dei dati, la gestione della crittografia, il controllo di accesso e la gestione delle interazioni con gli strumenti di interazione dell'utente."
+  },
+  {
+    "text": "Qual è l'opzione migliore per caricare un file? ",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il file più adatto per caricare un file è quello che offre la maggiore velocità di caricamento, una buona gestione delle cache e un'optimizzazione dei dati."
+  },
+  {
+    "text": "Quale componente di un computer architetto?",
+    "options": [
+      "Hardware",
+      "Software",
+      "Sistemi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Un sistema può essere simulado dalla software (virtualizzazione), ma è comunque una parte essenziale della struttura del computer."
+  },
+  {
+    "text": "La gestione dei dati è un aspetto fondamentale nella programmazione computeristica.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "explanation": "La programmazione di dati riguarda la creazione e il funzionamento di programmi che elaborano e manipolano dati digitale."
+  },
+  {
+    "text": "Come definire la differenza tra hardware e software per gli studenti?",
+    "options": [
+      "A un sistema operativo",
+      "B una CPU",
+      "C uno software di testa",
+      "D un disco rigido"
+    ],
+    "correctIndex": 1,
+    "explanation": "Il computer è composto da hardware (componenti physicali) e software (programmi e programmacchine) che lavorano insieme per soddisfare le nostre esigenze."
+  },
+  {
+    "text": "Qual è la differenza tra hardware e software nel sistema di computer?",
+    "options": [
+      "Hardware è la componente fisica del sistema di computer.",
+      "Software è l'applicazione che opera sulle componenti del sistema di computer.",
+      "La distinzione tra hardware e software è che il hardware può essere simulato da software (virtualizzazione)."
+    ],
+    "correctIndex": 0,
+    "explanation": "Il hardware si riferisce alla componente fisica che compone lo stato dell'oggetto o della cosa, mentre il software si riferisce all'applicazione che opera sulle componenti del sistema di computer."
+  },
+  {
+    "text": "Come definire la dimensione di un archivo in termini di dati",
+    "options": [
+      "Il numero di byte che contiene l'intero arquivo.",
+      "La quantità di dati totali che un sistema di archiviazione può gestire."
+    ],
+    "correctIndex": 2,
+    "explanation": "Un file è una sequenza di dati in formato binario che possono essere descritti utilizzando una lingua di programmazione specifica. "
+  },
+  {
+    "text": "Quale delle seguenti opzioni è il miglior modo per organizzare un sistema di archiviazione?",
+    "options": [
+      "Dispositivo fisico",
+      "Fisico digitale",
+      "Système d'exploitation",
+      "File system"
+    ],
+    "correctIndex": 2,
+    "explanation": "In un sistema di archiviazione, il file system è il sistema che gestisce gli accessi ai dati."
+  },
+  {
+    "text": "Qual è la differenza tra hardware e software nel contesto della programmazione",
+    "options": [
+      "Hardware",
+      "Software",
+      "Programma",
+      "Componente"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il sistema di gestione del software e il hardware sono due componenti fondamentali dell'hardware computer, che possono essere simili ma non uguali."
+  },
+  {
+    "text": "Come determinare la percentuale di appuntamenti con qualcuno dopo 2 anni di relazione?",
+    "options": [
+      "A. 20%",
+      "B. 30%",
+      "C. 40%",
+      "D. 50%"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'esperienza accumulata durante la relazione può influenzare la probabilità di una condivisione sessuale, ma non è un indicatore diretto della percentuale di appuntamenti. Ciò dipende anche dall'individuo e dalle preferenze personali."
+  },
+  {
+    "text": "Qual è la principale differenza tra l'hardware e il software nella computer architecture?",
+    "options": [
+      "Hardware vs Software",
+      "Programmazione vs Simulazione",
+      "Componenti hardware vs Componenti software"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il software è definito come ogni programma utilizzato per operare su un computer, mentre il hardware sono i componenti fisici che forniscono le funzioni di base alla quale viene eseguita la programmazione"
+  },
+  {
+    "text": "Domanda 1: Quale è il principale componente hardware di una computer?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il hardware è composto da componenti fisici del sistema computer."
+  },
+  {
+    "text": "Domanda 1: Qual è la differenza tra hardware e software?",
+    "options": [
+      "Il software è più veloce del hardware",
+      "Il hardware può essere simulato dal software",
+      "Il software è il complesso fisico della macchina",
+      "Il hardware è l'hardware esterno"
+    ],
+    "correctIndex": 1,
+    "explanation": "Il hardware è il complesso fisico della macchina, mentre il software è una serie di programmi che elaborano i dati."
+  },
+  {
+    "text": "Cosa rappresenta 'hardware' in un sistema di computer?",
+    "options": [
+      "Il software",
+      "I componenti fisici del computer",
+      "La rete",
+      "L'impostazione"
+    ],
+    "correctIndex": 1,
+    "explanation": "I componenti fisici di un sistema di computer"
+  },
+  {
+    "text": "Qual è il nome del ciclo di istruzioni eseguito dal CPU?",
+    "options": [
+      "Fetch-execute cycle",
+      "Decode execute cycle",
+      "Fetch-decode execute cycle",
+      "Decode-stage only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il ciclo di istruzioni che segue il fetch"
+  },
+  {
+    "text": "Cosa significa 'parallel computing'?",
+    "options": [
+      "Calcolo eseguito in serie",
+      "Calcolo eseguito simultaneamente",
+      "Calcolo eseguito in parallelo",
+      "Calcolo non eseguito"
+    ],
+    "correctIndex": 1,
+    "explanation": "Calcolo che richiede l'esecuzione di processi contemporaneamente"
+  },
+  {
+    "text": "Quale è il principale metrica utilizzata per misurare la prestazione di un sistema di computer?",
+    "options": [
+      "Tempo di esecuzione",
+      "MIPS",
+      "FLOPS",
+      "Capacità di memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il tempo di esecuzione dei processi"
+  },
+  {
+    "text": "Cosa rappresenta 'operating system'?",
+    "options": [
+      "Un programma di sistema",
+      "Un software applicativo",
+      "Una interfaccia utente",
+      "L'apparato del computer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Programma che coordina l'attività tra l'applicazione e il hardware"
+  },
+  {
+    "text": "Qual è il tipo di calcolo che consiste nell'eseguire molte operazioni contemporaneamente?",
+    "options": [
+      "A"
+    ],
+    "B": [],
+    "correctIndex": 0,
+    "explanation": "Parallelo"
+  },
+  {
+    "text": "Qual è il nome della architettura di memory access più comune?",
+    "options": [
+      "A"
+    ]
+  },
+  {
+    "text": "Qual è il nome della unità che elabora le istruzioni nel sistema di rete?",
+    "options": [
+      "CPU",
+      "GPU",
+      "RAM",
+      "Disk"
+    ],
+    "correctIndex": 0,
+    "explanation": "La CPU (Central Processing Unit) è la componente hardware responsabile dell'elaborazione delle istruzioni nel sistema di rete."
+  },
+  {
+    "text": "Qual è il tipo di calcolo che prevede l'esecuzione simultanea di molti calcoli o processi?",
+    "options": [
+      "A"
+    ],
+    "B": [],
+    "correctIndex": 0,
+    "explanation": "Parallelo"
+  },
+  {
+    "text": " Qual è il termine che descrive la capacità di eseguire molti calcoli contemporaneamente?",
+    "options": [
+      "A"
+    ],
+    "B": "",
+    "C": [
+      "D"
+    ],
+    "correctIndex": 0,
+    "explanation": ""
+  },
+  {
+    "text": "Qual è il tipo di calcolo in cui molti calcoli o esecuzioni di processi vengono eseguiti contemporaneamente?",
+    "options": [
+      "A) Sequenziale",
+      "B) Parallelo",
+      "C) Simultaneo",
+      "D) Concorrente"
+    ],
+    "correctIndex": 1,
+    "explanation": "La risposta corretta è 'Parallelo' perché è il tipo di calcolo in cui molti calcoli o esecuzioni di processi vengono eseguiti contemporaneamente."
+  },
+  {
+    "text": "Quale delle seguenti opzioni descrive la parallel computing?",
+    "options": [
+      "A"
+    ]
+  },
+  {
+    "text": "Cosa rappresenta il ciclo di istruzione del CPU?",
+    "options": [
+      "Un solo istruzione",
+      "Molti istruzioni",
+      "Istruzioni in parallelo",
+      "Non funziona"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'istruzione è il processo che il CPU esegue per eseguire un'istruzione."
+  },
+  {
+    "text": "Quale delle seguenti opzioni descrive meglio la parallelità nella computazione?",
+    "options": [
+      "La parallela è un tipo di calcolo che richiede esecuzione simultanea di una singola operazione",
+      "La parallela è un tipo di calcolo che richiede esecuzione simultanea di molte operazioni diverse",
+      "La parallela non è un tipo di calcolo",
+      "L'asincronia è un tipo di calcolo"
+    ],
+    "correctIndex": 1,
+    "explanation": "La parallela è un tipo di calcolo che richiede esecuzione simultanea di molte operazioni diverse. Ad esempio, in una NUMA (Non-Uniform Memory Access) architettura, le differenti unità del sistema lavorano contemporaneamente per elaborare dati."
+  },
+  {
+    "text": "Qual è il tipo di computazione che prevede l'esecuzione congiunta di molte operazioni o processi?",
+    "options": [
+      "A"
+    ],
+    "correctIndex": 0,
+    "explanation": "Parallelo"
+  },
+  {
+    "text": "Qual è il termine che descrive la capacità di eseguire molte operazioni simultaneamente?",
+    "options": [
+      "Parallelo",
+      "Serie",
+      "Simultaneo",
+      "Concorrente"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'architecture del sistema è caratterizzata dalla capacità di eseguire più calcoli contemporaneamente."
+  },
+  {
+    "text": "Quale è il termine più adatto per descrivere la rappresentazione delle istruzioni in un computer?",
+    "options": [
+      "A"
+    ]
+  },
+  {
+    "text": "Cosa rappresenta 'Virtualizzazione' nel contesto della computer architettura?",
+    "options": [
+      "Simbolica",
+      "Fisica",
+      "Software",
+      "Hardware"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'uso del software per simulare il hardware"
+  },
+  {
+    "text": "Quale è il tipo di calcolo in cui molte operazioni o esecuzioni di processi vengono eseguite contemporaneamente?",
+    "options": [
+      "A"
+    ]
+  },
+  {
+    "text": "Qual è il termine che descrive la capacità di eseguire molte istruzioni simultaneamente?",
+    "options": [
+      "A",
+      "Biparale",
+      "Parallelismo",
+      "Concorrenza"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parallelismo è il tipo di calcolo che prevede l'esecuzione di molte istruzioni contemporanee."
+  },
+  {
+    "text": "Qual è il concetto di parallelismo di elaborazione?",
+    "options": [
+      "Esecuzione sequenziale",
+      "Esecuzione parallela",
+      "Processamento in parallelo",
+      "Non utilizzato"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'esecuzione parallela è un tipo di calcolo in cui molte operazioni o l'execuzione di processi vengono eseguite contemporaneamente."
+  },
+  {
+    "text": "Cosa è il MIPS?",
+    "options": [
+      "FLOPS",
+      "Floating-Point Operations Per Second",
+      "Million Instructions Per Second",
+      "Byte"
+    ],
+    "correctIndex": 2,
+    "explanation": "MIPS è una misura del potenziale di un processore in termi di istruzioni eseguite al secondo."
+  },
+  {
+    "text": "Qual è il tipo di archittettura dell'elenco che consente alla CPU di eseguire molte istruzioni contemporaneamente?",
+    "options": [
+      "MOLTO SEQUENZIALE",
+      "SEQUENZALOGICA",
+      "PARALLELA",
+      "CONCORRENTI"
+    ],
+    "correctIndex": 3,
+    "explanation": "La parallel computing è un tipo di archittettura che consente alla CPU di eseguire molte istruzioni contemporaneamente."
+  },
+  {
+    "text": "Qual è il principale componente del sistema di archiviazione di un computer?",
+    "options": [
+      "Central Processing Unit",
+      "Memoria RAM",
+      "Dispositivo di archiviazione",
+      "Sistema Operativo"
+    ],
+    "correctIndex": 3,
+    "explanation": "Il sistema di archiviazione è responsabile di memorizzare i dati e i programmi del computer."
+  },
+  {
+    "text": "Qual è il tipo di architettura utilizzato da sistemi computer in cui più processori sono collegati insieme?",
+    "options": [
+      "Unidimensionale",
+      "Multidimensionale",
+      "Non uniforme",
+      "Parallelo"
+    ],
+    "correctIndex": 2,
+    "explanation": "La non uniforme memory access (NUMA) è un tipo di architettura che combina processori e memoria in modo distribuito."
+  },
+  {
+    "text": "Qual è il tipo di calcolo che prevede l'esecuzione di molte operazioni contemporanee?",
+    "options": [
+      "Serial",
+      "Parallelo",
+      "Sincronizzato",
+      "Asincrono"
+    ],
+    "correctIndex": 1,
+    "explanation": "La risposta corretta è 'Parallelo', perché la parallel computing prevede l'esecuzione di molte operazioni contemporanee."
+  },
+  {
+    "text": "Qual è la risposta corretta per l'operazione di archiviazione?",
+    "options": [
+      "Copia",
+      "Semplificazione",
+      "Eliminazione",
+      "Compressione"
+    ],
+    "correctIndex": 0,
+    "explanation": "La risposta corretta è 'Copia'. La copia è l'operazione di archiviazione che consiste nel creare una replica esatta di un file o di un directory."
+  },
+  {
+    "text": "Qual è il processo che avviene quando l'CPU esegue una istruzione?",
+    "options": [
+      "Fetch",
+      "Decode",
+      "Execute",
+      "Store"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'esecuzione è il secondo stadio del ciclo di istruzioni."
+  },
+  {
+    "text": "Qual è il tipo di architetura di elaborazione dei dati utilizzato nei computer?",
+    "options": [
+      "Varchar",
+      "Carattere binario",
+      "Bit",
+      "Circolo"
+    ],
+    "correctIndex": 2,
+    "explanation": "La rappresentazione dei dati in un formato binario"
+  },
+  {
+    "text": "Qual è il tipo di archittetura computazionale che prevede la simultanea esecuzione di molte istruzioni?",
+    "options": [
+      "Sequenziale",
+      "Simultanea",
+      "Parallela",
+      "Asincrona"
+    ],
+    "correctIndex": 2,
+    "explanation": "La parallela è un tipo di archittetura che prevede la simultanea esecuzione di molte istruzioni"
+  },
+  {
+    "text": "Qual è il tipo di calcolo che comporta l'esecuzione simultanea di molte operazioni?",
+    "options": [
+      "Parallelo parallelo",
+      "Calcolo parallelo",
+      "Calcolo distribuito",
+      "Calcolo simmetrico"
+    ],
+    "correctIndex": 1,
+    "explanation": "Il calcolo parallelo è un tipo di calcolo che comporta l'esecuzione simultanea di molte operazioni."
+  },
+  {
+    "text": "Quale tipo di archittetura di computer utilizza più di un processor?",
+    "options": [
+      "Monoprocesso",
+      "Multiprocesso",
+      "Parallelo",
+      "Simulato"
+    ],
+    "correctIndex": 1,
+    "explanation": "La multiprocesso è una tecnica che consente l'esecuzione di più instruction cicli contemporaneamente, migliorando la prestazione dell'hardware."
+  },
+  {
+    "text": "Qual è il tipo di calcolo che prevede l'esecuzione simultanea di molte operazioni?",
+    "options": [
+      "Parallelo parallelo",
+      "Calcolo distribuito",
+      "Non-uniforme memoria accesso",
+      "Esecuzione parallela"
+    ],
+    "correctIndex": 3,
+    "explanation": "La corretta risposta è 'Esecuzione parallela'."
+  },
+  {
+    "text": "Qual è il concetto diParallel computing?",
+    "options": [
+      "Un tipo di calcolo sequenziale",
+      "Una tecnica per migliorare le prestazioni dei sistemi computerizzati",
+      "La capacità di eseguire più processi in parallelo",
+      "Un tipo di calcolo che utilizza più core CPU"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parallel computing è una tipologia di calcolo dove molti calcoli o la gestione di processi vengono eseguiti contemporaneamente."
+  },
+  {
+    "text": "Qual è il concetto di parallelismo in computazione?",
+    "options": [
+      "Processamento parallelo",
+      "Calcolo distribuito",
+      "Esecuzione parallela",
+      "Concorrenza processuale"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parallelismo è un tipo di calcolo dove molte operazioni sono eseguite contemporaneamente."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline con una latenza di commutazione più piccola che la latenza della memoria, cosa accade quando si verifica un 'data hazard' non gestito dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware per l'incompatibilità dei valori dei registri",
+      "Il risultato viene scritto in memoria e si verifica una latenza di commutazione più lunga"
+    ],
+    "correctIndex": 3,
+    "explanation": "In un sistema pipeline con una latenza di commutazione più piccola che la latenza della memoria, se si verifica un 'data hazard' non gestito dal compilatore il risultato viene scritto in memoria e si verifica una latenza di commutazione più lunga a causa dell'incompatibilità dei valori dei registri."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "Se un sistema pipeline di 5 stadi è configurato con un controllo di avanzamento (fetch-execute) basato su una sequenza di istruzioni, quale accade se si verifica un 'data hazard' non gestito dal compilatore?",
+    "options": [
+      "Il risultato viene scritto in memoria prima che il precedente istruzione abbia terminato",
+      "Il processore aumenta la frequenza di clock per compensare lo stallimento",
+      "Viene generata un'eccezione hardware che blocca l'esecuzione del sistema",
+      "Lo stallo della pipeline viene ridotto grazie alla regolazione dei cycle di fetch-execute"
+    ],
+    "correctIndex": 1,
+    "explanation": "Se non si gestiscono i data hazard, lo stallimento può aumentare l'attesa di risposta e diminuire la velocità dell'esecuzione"
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "In un sistema pipeline a 5 stadi, cosa accade se si verifica una 'data hazard' non gestita dal compilatore?",
+    "options": [
+      "Lo stallo della pipeline riduce il throughput",
+      "Il processore aumenta la frequenza di clock",
+      "Viene generata un'eccezione hardware e il risultato viene scritto in memoria",
+      "Il risultato viene scritto in memoria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le data hazard causano stalli (bubbles) che riducono l'efficienza se non risolte con forwarding o reordering."
+  },
+  {
+    "text": "Quale è la principale caratteristica della parallelità nel calcolo?",
+    "options": [
+      "La parallelità non ha alcun impatto sulla performance del sistema",
+      "La parallelità aumenta la velocità di esecuzione delle istruzioni",
+      "La parallelità permette l'esecuzione simultanea di molteplici calcoli"
+    ],
+    "correctIndex": 2,
+    "explanation": "La parallelità è caratterizzata dall'esecuzione simultanea di molti calcoli, il che può migliorare la velocità di esecuzione delle istruzioni e aumentare le prestazioni del sistema."
+  },
+  {
+    "text": "In un sistema di architettura parallela, quale metrica è considerata la più importante per misurare il rendimento dell'applicazione?",
+    "options": [
+      "L'arbitrato temporale",
+      "Il numero di istruzioni eseguite in un secondo",
+      "La velocità del clock",
+      "La capacità di memoria"
+    ],
+    "correctIndex": 1,
+    "explanation": "La metrica dell'esecuzione in tempo reale (s) è considerata la più importante per misurare il rendimento dell'applicazione nel contesto della parallelietà, poiché essa fornisce un'indicazione diretta sulla capacità del sistema di eseguire molteplici operazioni contemporaneamente."
+  },
+  {
+    "text": "Qual è il principale obiettivo dell'hardware nella configurazione di un sistema computer?",
+    "options": [
+      "Eseguire le operazioni dell'utente",
+      "Storizzare i dati e i programmi",
+      "Simulare il comportamento hardware con software",
+      "Compilare gli istruzioni in codice machine"
+    ],
+    "correctIndex": 2,
+    "explanation": "La scelta corretta è 'Simulare il comportamento hardware con software' perché l'hardware può essere simizzato dal software attraverso la virtualizzazione."
+  },
+  {
+    "text": "Qual è il nome dell'architettura computer che prevede la memorizzazione di entrambi i programmi e dei dati nel medesimo spazio di memoria?",
+    "options": [
+      "Von Neumann",
+      "Harvard",
+      "Mesa",
+      "CISC"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'architettura Von Neumann è caratterizzata dalla memorizzazione congiunta di programmi e dati nel medesimo spazio di memoria."
+  },
+  {
+    "text": "Qual è il tipo di architetura di memoria che consente la memorizzazione sia dei programmi che degli dati?",
+    "options": [
+      "Von Neumann",
+      "Harvard"
+    ],
+    "correctIndex": 0,
+    "explanation": "La risposta corretta è Von Neumann, poiché tale architetura di memoria consente la memorizzazione sia dei programmi che degli dati."
+  },
+  {
+    "text": "Qual è il principale indicatore di prestazione per determinare l'efficienza del parallelismo computazionale?",
+    "options": [
+      "L'esecuzione del tempo (s)",
+      "La velocità del clock (Hz)",
+      "Il numero di istruzioni eseguite (MIPS)",
+      "La capacità di memoria (Byte)"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'esecuzione del tempo (in secondi) è il principale indicatore di prestazione per determinare l'efficienza del parallelismo computazionale, poiché rappresenta la quantità di tempo necessario per completare un'applicazione."
+  },
+  {
+    "text": "Il tipo di parallelismo più adatto per una applicazione di calcolo scientifico che richiede esecuzione simultanea di molti processi sarebbe il parallelismo",
+    "options": [
+      "A) parallelismo di basso livello (es. sincronizzazione di accessi alla memoria)",
+      "B) parallelismo di alto livello (es. esecuzione di instruzioni in parallelo per migliorare le prestazioni)",
+      "C) parallelismo fisico (es. utilizzo di multi-core o processori GPU)",
+      "D) parallelismo logico (es. sincronizzazione di thread condivisi)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Il parallelismo fisico è l'opzione più adatta per applicazioni che richiedono esecuzione simultanea di molti processi, come calcoli scientifici."
+  },
+  {
+    "text": "Qual è lo scopo principale della fase 'fetch' nel ciclo di istruzione del CPU?",
+    "options": [
+      "Eseguire l'istruzione",
+      "Caricare l'istruzione dal memoria",
+      "Verificare la correttezza dell'istruzione",
+      "Invio dell'istruzione al dispositivo di input"
+    ],
+    "correctIndex": 1,
+    "explanation": "La fase 'fetch' è destinata a caricare l'istruzione successiva dal memoria, preparando il terreno per la sua esecuzione."
+  },
+  {
+    "text": "Il calcolo parallelo è una tipologia di computazione in cui molte operazioni o l'esecuzione di processi vengono eseguite contemporaneamente. Scegliere il modello di archittettura adatto per un'applicazione specifica è fondamentale per ottenere il miglior rendimento.",
+    "options": [
+      "L'architettura di NUMA consente l'esecuzione parallela delle operazioni sulla memoria più rapida",
+      "L'utilizzo della tecnologia di parallelismo basato su thread e processi consente una maggiore efficienza energetica",
+      "I sistemi con archittetura di punto calo sono ideali per applicazioni che richiedono calcolo parallelo",
+      "L'architettura di VLIW (Visual Supervision and Instruction-Level Parallelism) consente l'esecuzione parallela delle istruzioni"
+    ],
+    "correctIndex": 3,
+    "explanation": "La scelta del modello di archittettura giusto è fondamentale per ottenere il miglior rendimento in un'applicazione specifica, poiché può influire sulle prestazioni e sulla gestione dell'energia."
+  },
+  {
+    "text": "Qual è la principale metrica utilizzata per misurare il tempo di esecuzione di un sistema computer?",
+    "options": [
+      "Esecuzione del tempo (s)",
+      "Dati archiviati in disco (Byte)",
+      "Frequenza del clock (Hz)"
+    ],
+    "correctIndex": 0,
+    "explanation": "La metrica giusta è l'esecuzione del tempo, poiché misura la quantità di tempo necessario per eseguire un'operazione su un sistema computer."
+  },
+  {
+    "text": "In una architettura di accesso non uniforme alla memoria (NUMA), cosa rappresenta il principale metricone dell'esecuzione?",
+    "options": [
+      "Tempo di esecuzione (s)",
+      "Frequenza del clock (Hz) e numero di core",
+      "Capacità di memoria (Byte) e velocità di comunicazione (bit/s)",
+      "MIPS (Million Instructions Per Second)"
+    ],
+    "correctIndex": 0,
+    "explanation": "La risposta corretta è il tempo di esecuzione, che rappresenta la metrica principale per misurare l'efficienza di un sistema. In una architettura NUMA, il tempo di esecuzione dipende dalla combinazione della velocità del clock, del numero di core e della velocità di comunicazione."
+  },
+  {
+    "text": "Quale funzione svolge l'I/O Manager nel gestire la comunicazione tra il computer e il mondo esterno?",
+    "options": [
+      "Solo gestione del file system",
+      "Coordinate le attività di controllo programmatico, supervisione dei componenti del sistema e comunicazioni con l'utente",
+      "Gestione delle comunicazioni I/O solo per la scrittura sui dischi"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'I/O Manager svolge un ruolo fondamentale nella gestione della comunicazione tra il computer e il mondo esterno, inclusa la coordinazione delle attività di controllo programmatico, della supervisione dei componenti del sistema e della comunicazione con l'utente."
+  },
+  {
+    "text": "L'architettura del sistema decisa il luogo dove i programmi e i dati devono essere memorizzati nel memoria del computer?",
+    "options": [
+      "Sì",
+      "No, l'I/O manager decide questo",
+      "Il controllo programmatico decide",
+      "La gestione dei file decide"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'I/O manager non decide il luogo dove i programmi e i dati devono essere memorizzati nel memoria del computer, ma è la funzione del controllo programmatico."
+  },
+  {
+    "text": "L'architetto del sistema di controllo gestisce le comunicazioni tra i componenti del computer, l'applicazione software e l'utente. Quale delle seguenti opzioni descrive la funzione principale dell'architetto del sistema di controllo?",
+    "options": [
+      "Gestire il flusso dei dati in entrata e uscita dai dispositivi di input/output",
+      "Controllare le operazioni del programma",
+      "Decidere dove memorizzare i programmi e i dati nel memoria del computer",
+      "Gestire la comunicazione con gli utenti e i dispositivi esterni"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'architetto del sistema di controllo ha una funzione principale in quanto decide dove memorizzare i programmi e i dati nel memoria del computer."
+  },
+  {
+    "text": "Qual è il risultato del fetch-execute cycle quando l'istruzione viene decodificata?",
+    "options": [
+      "L'istruzione viene eseguita immediatamente",
+      "L'istruzione viene memorizzata nella memoria per essere eseguita in un futuro momento",
+      "Il controllo unità del CPU verifica se l'istruzione è corretta o meno",
+      "La sequenza di istruzioni viene eseguita simultaneamente"
+    ],
+    "correctIndex": 2,
+    "explanation": "Il decode stage è il secondo stadio del fetch-execute cycle, nel quale il controllo unità del CPU verifica la correttezza dell'istruzione e le trasforma in una sequenza di segnali di controllo per essere eseguite dalle unità funzionali del CPU."
+  },
+  {
+    "text": "Qual è il tipo di desktop virtualizzazione che richiede l'installazione degli OS sui dispositivi locali?",
+    "options": [
+      "A) Virtual desktop infrastructure (VDI)",
+      "B) Local desktop virtualization",
+      "C) Desktop virtualization",
+      "D) Network virtualization"
+    ],
+    "correctIndex": 1,
+    "explanation": "La scelta corretta è B) Local desktop virtualization, poiché questa tecnologia richiede l'installazione degli OS sui dispositivi locali"
+  },
+  {
+    "text": "Qual è la principale differenza tra Virtual Desktop Infrastructure (VDI) e Local Desktop Virtualization?",
+    "options": [
+      "La VDI richiede una connessione stabile al server, mentre la Local Desktop Virtualization si esegue localmente",
+      "La VDI richiede il software di virtualizzazione, mentre la Local Desktop Virtualization non richiede alcun software",
+      "La VDI è più sicura rispetto alla Local Desktop Virtualization",
+      "La VDI richiede un'installazione del sistema operativo locale, mentre la Local Desktop Virtualization esegue il sistema operativo remoto"
+    ],
+    "correctIndex": 1,
+    "explanation": "La corretta risposta è l'opzione 2: La VDI richiede il software di virtualizzazione, mentre la Local Desktop Virtualization non richiede alcun software. Questa opzione è più precisa perché la VDI è una tecnologia che richiede specifici software di virtualizzazione per funzionare correttamente."
+  },
+  {
+    "text": "Qual tipo di desktop virtualizzazione non richiede l'installazione di OS sul dispositivo locale?",
+    "options": [
+      "A) VDI",
+      "B) Local desktop virtualization",
+      "C) Virtual desktop infrastructure (VDI) e local desktop virtualization",
+      "D) Networkvirtualization"
+    ],
+    "correctIndex": 1,
+    "explanation": "La scelta corretta è B) Local desktop virtualization, poiché si tratta di una forma di desktop virtualizzazione che non richiede l'installazione di OS sul dispositivo locale."
+  },
+  {
+    "text": "Come può la virtualizzazione ridurre il tempo di configurazione delle applicazioni?",
+    "options": [
+      "L'aggiunta di un software di gestione di infrastrutture",
+      "La sostituzione dei computer fisici con VM software definiti",
+      "La creazione di politiche di sicurezza che consentono al singolo utente accedere agli elementi critici dell'applicazione",
+      "L'eliminazione delle applicazioni inesatte e le loro sostitutive ripetute"
+    ],
+    "correctIndex": 1,
+    "explanation": "La virtualizzazione può ridurre il tempo di configurazione delle applicazioni grazie alla sostituzione dei computer fisici con VM software definiti, che consentono la creazione di politiche di sicurezza e l'automatizzazione degli script"
+  },
+  {
+    "text": "Qual è il tipo di network virtualizzazione che si concentra sul controllo della rete del traffico di rete (chiamata 'piano di controllo')?",
+    "options": [
+      "Software-defined networking (SDN)",
+      "Network function virtualization (NFV)",
+      "Storage virtualization",
+      "Virtual machine management"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il software definito networking (SDN) è un tipo di network virtualizzazione che si concentra sul controllo della rete del traffico di rete, permettendo all'amministratore di modificare e controllare gli elementi hardware senza toccare le componenti fisiche."
+  },
+  {
+    "text": "L'architettura del networking virtuale utilizza il software per creare una 'visualizzazione' della rete che un amministratore può utilizzare per gestire la rete da un'unica console. Che tipo di virtualizzazione del networking è caratterizzata dalla possibilità di modificare e controllare gli elementi hardware senza toccare i componenti fisici sottostanti?",
+    "options": [
+      "Network function virtualization (NFV)",
+      "Storagevirtualization",
+      "Software-defined networking (SDN)",
+      "La gestione della rete"
+    ],
+    "correctIndex": 2,
+    "explanation": "La scelta corretta è software-defined networking (SDN), poiché si tratta di una forma di virtualizzazione del networking che abstracta gli elementi hardware e le funzioni (ad esempio, i collegamenti, le schaltere e le router) e li abstracta nel software eseguito su un ipervisor. Questo consente all'amministratore della rete di modificare e controllare questi elementi senza toccare i componenti fisici sottostanti."
+  },
+  {
+    "text": "La tecnica di server consolidation si basa sulla capacità di virtualizzare molti server virtuali su un solo servers fisico, migliorando l'utilizzo delle risorse hardware",
+    "options": [
+      "Aumentare la disponibilità dei servizi",
+      "Migliorare la sicurezza dei dati",
+      "Massimizzare l'utilizzo delle risorse hardware",
+      "Semplicificare le gestioni del sistema"
+    ],
+    "correctIndex": 3,
+    "explanation": "La tecnica di server consolidation si basa sulla capacità di virtualizzare molti server virtuali su un solo server fisico, migliorando l'utilizzo delle risorse hardware."
+  },
+  {
+    "text": "Qual è il tipo di ipervisore che può eseguire più operazioni sulle risorse del hardware senza interrompere il funzionamento dei sistemi ospiti?",
+    "options": [
+      "Type-1",
+      "Type-2",
+      "Type-X",
+      "Type-Y"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il tipo di ipervisore Type-1 è in grado di eseguire più operazioni sulle risorse del hardware senza interrompere il funzionamento dei sistemi ospiti, poiché opera direttamente sulla hardware."
+  },
+  {
+    "text": "Qual è il principale vantaggio della virtualizzazione rispetto alla configurazione hardware fisica, considerando anche l'automatica del provisioning?",
+    "options": [
+      "È più costoso e richiede meno tempo per il provisioning",
+      "Consente di eseguire più sistemi operativi sullo stesso dispositivo fisico e riduce la necessità di allocare risorse hardware separate",
+      "Richiede più tempo e denaro per l'installazione del sistema operativo su ogni applicazione, mentre la virtualizzazione è più veloce",
+      "Non ha alcun vantaggio rispetto alla configurazione hardware fisica"
+    ],
+    "correctIndex": 1,
+    "explanation": "La virtualizzazione consente di eseguire più sistemi operativi sullo stesso dispositivo fisico e riduce la necessità di allocare risorse hardware separate, rendendola una soluzione più efficiente nel tempo e nella costosità."
+  },
+  {
+    "text": "Qual caratteristica del sistema di virtualizzazione è 'Preservare prestazioni con controlli avanzati sui risorse'?",
+    "options": [
+      "A) Isolamento dei processi",
+      "B) Ripartizione delle risorse systemiche",
+      "C) Salvaguardia della prestazione con controlli avanzati sulle risorse",
+      "D) Separazione dei file"
+    ],
+    "correctIndex": 3,
+    "explanation": "La scelta C è corretta perché il sistema di virtualizzazione è progettato per preservare le prestazioni mantenendo controlli avanzati sui risorse allocabili alle VM."
+  },
+  {
+    "text": "Qual è il vantaggio principale della virtualizzazione dei servizi di archiviazione?",
+    "options": [
+      "La riduzione del costo",
+      "L'aumento della capacità di archiviazione",
+      "La massimizzazione dell'efficienza risorsica",
+      "L'eliminazione della necessità di gestione delle copie di backup"
+    ],
+    "correctIndex": 2,
+    "explanation": "La massimizzazione dell'efficienza risorsica è un vantaggio principale della virtualizzazione dei servizi di archiviazione, poiché consente di utilizzare al massimo le risorse fisiche disponibili, evitando la sottotuttilizzazione degli server."
+  },
+  {
+    "text": "Qual è il ruolo del programma di gestione software nel processo di provisioning delle macchine virtuali?",
+    "options": [
+      "Sostituire l'hardware fisico con macchine virtuali",
+      "Automatizzare la configurazione e il provisioning delle macchine virtuali",
+      "Gestire le risorse fisiche del sistema",
+      "Creare una rappresentazione virtuale di un computer fisico"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'opzione corretta è la seconda: 'Automatizzare la configurazione e il provisioning delle macchine virtuali'. Ciò è evidenziato nel paragrafo sulle benefici della virtualizzazione, che afferma che 'la provisioning virtuale per eseguire tutti gli applicazioni è significativamente più veloce' ed è possibile farlo con l'aiuto del software di gestione."
+  },
+  {
+    "text": "La virtualizzazione della memoria è una tecnica utilizzata per ottimizzare il consumo di risorse e migliorare la scalabilità dei sistemi computerizzati. Questa tecnica consente di distribuire le risorse della memoria in modo da poter utilizzare le stesse risorse in più applicazioni, rendendo possibile l'allocazione dinamica delle risorse disponibili sulla base delle esigenze dell'applicazione.",
+    "options": [
+      "La virtualizzazione della memoria permette di creare più istanze di un'applicazione senza necessità di copiare i dati",
+      "Consente al sistema di allocare le risorse della memoria in modo dinamico in base alle esigenze dell'applicazione",
+      "Utilizza la tecnologia dei blocchi di memoria per ridurre l'utilizzo di spazio e aumentare la velocità degli accessi"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'opzione corretta è la seconda, poiché la virtualizzazione della memoria consente al sistema di allocare le risorse della memoria in modo dinamico in base alle esigenze dell'applicazione, permettendo di ridurre l'utilizzo di spazio e aumentare la velocità degli accessi."
+  },
+  {
+    "text": "La tecnica di virtualizzazione del rete richiede la gestione delle seguenti categorie di componenti hardware?",
+    "options": [
+      "Solamente le funzioni del controllo della rete (lan, wan, etc.)",
+      "Tutti i componenti hardware che controllano il traffico di rete (switches, routers, ecc.).",
+      "Alcune funzioni specifiche del network, come firewall e analizzatore del traffico.",
+      "Tutti i componenti hardware della rete, senza eccezione"
+    ],
+    "correctIndex": 2,
+    "explanation": "La tecnica di virtualizzazione del rete richiede la gestione delle seguenti categorie di componenti hardware: tutti gli elementi hardware che controllano il traffico di rete (switches, routers, ecc.)."
+  },
+  {
+    "text": "Cosa è il tipo di desktop virtualizzazione che utilizza un server centrale per eseguire multiple VM e trasmettere i risultati ai dispositivi client in modalità streaming?",
+    "options": [
+      "Virtual Desktop Infrastructure (VDI)",
+      "Local Desktop Virtualization",
+      "Server Virtualization",
+      "Desktop Virtualization"
+    ],
+    "correctIndex": 0,
+    "explanation": "La Virtual Desktop Infrastructure (VDI) è un tipo di desktop virtualizzazione che esegue multiple VM su un server centrale e le trasmette ai dispositivi client in modalità streaming, consentendo alle organizzazioni di fornire agli utenti l'accesso a vari sistemi operativi senza doverli installare sul dispositivo"
+  }
+]

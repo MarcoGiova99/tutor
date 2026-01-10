@@ -1,0 +1,166 @@
+[
+  {
+    "text": "Qual è il tipo di desktop virtualizzazione che richiede l'installazione degli OS sui dispositivi locali?",
+    "options": [
+      "A) Virtual desktop infrastructure (VDI)",
+      "B) Local desktop virtualization",
+      "C) Desktop virtualization",
+      "D) Network virtualization"
+    ],
+    "correctIndex": 1,
+    "explanation": "La scelta corretta è B) Local desktop virtualization, poiché questa tecnologia richiede l'installazione degli OS sui dispositivi locali"
+  },
+  {
+    "text": "Qual è la principale differenza tra Virtual Desktop Infrastructure (VDI) e Local Desktop Virtualization?",
+    "options": [
+      "La VDI richiede una connessione stabile al server, mentre la Local Desktop Virtualization si esegue localmente",
+      "La VDI richiede il software di virtualizzazione, mentre la Local Desktop Virtualization non richiede alcun software",
+      "La VDI è più sicura rispetto alla Local Desktop Virtualization",
+      "La VDI richiede un'installazione del sistema operativo locale, mentre la Local Desktop Virtualization esegue il sistema operativo remoto"
+    ],
+    "correctIndex": 1,
+    "explanation": "La corretta risposta è l'opzione 2: La VDI richiede il software di virtualizzazione, mentre la Local Desktop Virtualization non richiede alcun software. Questa opzione è più precisa perché la VDI è una tecnologia che richiede specifici software di virtualizzazione per funzionare correttamente."
+  },
+  {
+    "text": "Qual tipo di desktop virtualizzazione non richiede l'installazione di OS sul dispositivo locale?",
+    "options": [
+      "A) VDI",
+      "B) Local desktop virtualization",
+      "C) Virtual desktop infrastructure (VDI) e local desktop virtualization",
+      "D) Networkvirtualization"
+    ],
+    "correctIndex": 1,
+    "explanation": "La scelta corretta è B) Local desktop virtualization, poiché si tratta di una forma di desktop virtualizzazione che non richiede l'installazione di OS sul dispositivo locale."
+  },
+  {
+    "text": "Come può la virtualizzazione ridurre il tempo di configurazione delle applicazioni?",
+    "options": [
+      "L'aggiunta di un software di gestione di infrastrutture",
+      "La sostituzione dei computer fisici con VM software definiti",
+      "La creazione di politiche di sicurezza che consentono al singolo utente accedere agli elementi critici dell'applicazione",
+      "L'eliminazione delle applicazioni inesatte e le loro sostitutive ripetute"
+    ],
+    "correctIndex": 1,
+    "explanation": "La virtualizzazione può ridurre il tempo di configurazione delle applicazioni grazie alla sostituzione dei computer fisici con VM software definiti, che consentono la creazione di politiche di sicurezza e l'automatizzazione degli script"
+  },
+  {
+    "text": "Qual è il tipo di network virtualizzazione che si concentra sul controllo della rete del traffico di rete (chiamata 'piano di controllo')?",
+    "options": [
+      "Software-defined networking (SDN)",
+      "Network function virtualization (NFV)",
+      "Storage virtualization",
+      "Virtual machine management"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il software definito networking (SDN) è un tipo di network virtualizzazione che si concentra sul controllo della rete del traffico di rete, permettendo all'amministratore di modificare e controllare gli elementi hardware senza toccare le componenti fisiche."
+  },
+  {
+    "text": "L'architettura del networking virtuale utilizza il software per creare una 'visualizzazione' della rete che un amministratore può utilizzare per gestire la rete da un'unica console. Che tipo di virtualizzazione del networking è caratterizzata dalla possibilità di modificare e controllare gli elementi hardware senza toccare i componenti fisici sottostanti?",
+    "options": [
+      "Network function virtualization (NFV)",
+      "Storagevirtualization",
+      "Software-defined networking (SDN)",
+      "La gestione della rete"
+    ],
+    "correctIndex": 2,
+    "explanation": "La scelta corretta è software-defined networking (SDN), poiché si tratta di una forma di virtualizzazione del networking che abstracta gli elementi hardware e le funzioni (ad esempio, i collegamenti, le schaltere e le router) e li abstracta nel software eseguito su un ipervisor. Questo consente all'amministratore della rete di modificare e controllare questi elementi senza toccare i componenti fisici sottostanti."
+  },
+  {
+    "text": "La tecnica di server consolidation si basa sulla capacità di virtualizzare molti server virtuali su un solo servers fisico, migliorando l'utilizzo delle risorse hardware",
+    "options": [
+      "Aumentare la disponibilità dei servizi",
+      "Migliorare la sicurezza dei dati",
+      "Massimizzare l'utilizzo delle risorse hardware",
+      "Semplicificare le gestioni del sistema"
+    ],
+    "correctIndex": 3,
+    "explanation": "La tecnica di server consolidation si basa sulla capacità di virtualizzare molti server virtuali su un solo server fisico, migliorando l'utilizzo delle risorse hardware."
+  },
+  {
+    "text": "Qual è il tipo di ipervisore che può eseguire più operazioni sulle risorse del hardware senza interrompere il funzionamento dei sistemi ospiti?",
+    "options": [
+      "Type-1",
+      "Type-2",
+      "Type-X",
+      "Type-Y"
+    ],
+    "correctIndex": 0,
+    "explanation": "Il tipo di ipervisore Type-1 è in grado di eseguire più operazioni sulle risorse del hardware senza interrompere il funzionamento dei sistemi ospiti, poiché opera direttamente sulla hardware."
+  },
+  {
+    "text": "Qual è il principale vantaggio della virtualizzazione rispetto alla configurazione hardware fisica, considerando anche l'automatica del provisioning?",
+    "options": [
+      "È più costoso e richiede meno tempo per il provisioning",
+      "Consente di eseguire più sistemi operativi sullo stesso dispositivo fisico e riduce la necessità di allocare risorse hardware separate",
+      "Richiede più tempo e denaro per l'installazione del sistema operativo su ogni applicazione, mentre la virtualizzazione è più veloce",
+      "Non ha alcun vantaggio rispetto alla configurazione hardware fisica"
+    ],
+    "correctIndex": 1,
+    "explanation": "La virtualizzazione consente di eseguire più sistemi operativi sullo stesso dispositivo fisico e riduce la necessità di allocare risorse hardware separate, rendendola una soluzione più efficiente nel tempo e nella costosità."
+  },
+  {
+    "text": "Qual caratteristica del sistema di virtualizzazione è 'Preservare prestazioni con controlli avanzati sui risorse'?",
+    "options": [
+      "A) Isolamento dei processi",
+      "B) Ripartizione delle risorse systemiche",
+      "C) Salvaguardia della prestazione con controlli avanzati sulle risorse",
+      "D) Separazione dei file"
+    ],
+    "correctIndex": 3,
+    "explanation": "La scelta C è corretta perché il sistema di virtualizzazione è progettato per preservare le prestazioni mantenendo controlli avanzati sui risorse allocabili alle VM."
+  },
+  {
+    "text": "Qual è il vantaggio principale della virtualizzazione dei servizi di archiviazione?",
+    "options": [
+      "La riduzione del costo",
+      "L'aumento della capacità di archiviazione",
+      "La massimizzazione dell'efficienza risorsica",
+      "L'eliminazione della necessità di gestione delle copie di backup"
+    ],
+    "correctIndex": 2,
+    "explanation": "La massimizzazione dell'efficienza risorsica è un vantaggio principale della virtualizzazione dei servizi di archiviazione, poiché consente di utilizzare al massimo le risorse fisiche disponibili, evitando la sottotuttilizzazione degli server."
+  },
+  {
+    "text": "Qual è il ruolo del programma di gestione software nel processo di provisioning delle macchine virtuali?",
+    "options": [
+      "Sostituire l'hardware fisico con macchine virtuali",
+      "Automatizzare la configurazione e il provisioning delle macchine virtuali",
+      "Gestire le risorse fisiche del sistema",
+      "Creare una rappresentazione virtuale di un computer fisico"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'opzione corretta è la seconda: 'Automatizzare la configurazione e il provisioning delle macchine virtuali'. Ciò è evidenziato nel paragrafo sulle benefici della virtualizzazione, che afferma che 'la provisioning virtuale per eseguire tutti gli applicazioni è significativamente più veloce' ed è possibile farlo con l'aiuto del software di gestione."
+  },
+  {
+    "text": "La virtualizzazione della memoria è una tecnica utilizzata per ottimizzare il consumo di risorse e migliorare la scalabilità dei sistemi computerizzati. Questa tecnica consente di distribuire le risorse della memoria in modo da poter utilizzare le stesse risorse in più applicazioni, rendendo possibile l'allocazione dinamica delle risorse disponibili sulla base delle esigenze dell'applicazione.",
+    "options": [
+      "La virtualizzazione della memoria permette di creare più istanze di un'applicazione senza necessità di copiare i dati",
+      "Consente al sistema di allocare le risorse della memoria in modo dinamico in base alle esigenze dell'applicazione",
+      "Utilizza la tecnologia dei blocchi di memoria per ridurre l'utilizzo di spazio e aumentare la velocità degli accessi"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'opzione corretta è la seconda, poiché la virtualizzazione della memoria consente al sistema di allocare le risorse della memoria in modo dinamico in base alle esigenze dell'applicazione, permettendo di ridurre l'utilizzo di spazio e aumentare la velocità degli accessi."
+  },
+  {
+    "text": "La tecnica di virtualizzazione del rete richiede la gestione delle seguenti categorie di componenti hardware?",
+    "options": [
+      "Solamente le funzioni del controllo della rete (lan, wan, etc.)",
+      "Tutti i componenti hardware che controllano il traffico di rete (switches, routers, ecc.).",
+      "Alcune funzioni specifiche del network, come firewall e analizzatore del traffico.",
+      "Tutti i componenti hardware della rete, senza eccezione"
+    ],
+    "correctIndex": 2,
+    "explanation": "La tecnica di virtualizzazione del rete richiede la gestione delle seguenti categorie di componenti hardware: tutti gli elementi hardware che controllano il traffico di rete (switches, routers, ecc.)."
+  },
+  {
+    "text": "Cosa è il tipo di desktop virtualizzazione che utilizza un server centrale per eseguire multiple VM e trasmettere i risultati ai dispositivi client in modalità streaming?",
+    "options": [
+      "Virtual Desktop Infrastructure (VDI)",
+      "Local Desktop Virtualization",
+      "Server Virtualization",
+      "Desktop Virtualization"
+    ],
+    "correctIndex": 0,
+    "explanation": "La Virtual Desktop Infrastructure (VDI) è un tipo di desktop virtualizzazione che esegue multiple VM su un server centrale e le trasmette ai dispositivi client in modalità streaming, consentendo alle organizzazioni di fornire agli utenti l'accesso a vari sistemi operativi senza doverli installare sul dispositivo"
+  }
+]
