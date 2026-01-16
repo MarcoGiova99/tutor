@@ -3,9 +3,9 @@
 export const ROADMAPS = {
   // --- CONTABILITÀ (INVARIATO) ---
   accounting: [
-    { id: "acc-01-iva", title: "L'IVA", subtitle: "L'IVA copia.pdf", icon: "💸", difficulty: "easy", indent: 0, req: null },
-    { id: "acc-02-ratei", title: "Ratei e Risconti", subtitle: "Ratei e Risconti copia.pdf", icon: "⏳", difficulty: "medium", indent: 0, req: "acc-01-iva" },
-    { id: "acc-03-ammortamenti", title: "Ammortamenti", subtitle: "La contabilità e gli ammortamenti.pdf", icon: "📉", difficulty: "hard", indent: 0, req: "acc-02-ratei" }
+    { id: "acc-01-general", title: "Contabilità Generale", subtitle: "Introduzione", icon: "📘", difficulty: "easy", indent: 0, req: null },
+    { id: "acc-02-ratei", title: "Ratei e Risconti", subtitle: "Ratei e Risconti copia.pdf", icon: "⏳", difficulty: "medium", indent: 0, req: "acc-01-general" },
+    { id: "acc-03-iva", title: "L'IVA", subtitle: "L'IVA copia.pdf", icon: "💸", difficulty: "hard", indent: 0, req: "acc-02-ratei" }
   ],
 
   // --- CLOUD COMPUTING (17 LEZIONI) ---
@@ -46,4 +46,4 @@ export const ROADMAPS = {
     { id: "c-09-terraform", title: "Terraform", subtitle: "Lecture 09", icon: "🏗️", difficulty: "boss", indent: 0, req: "c-09-serverless" }
   ]
 };
-console.log("🔹 Roadmap JS Loaded - v2026-01-16-FIX");
+console.log("🔹 Roadmap JS Loaded - v2026-01-16-REORDER");
