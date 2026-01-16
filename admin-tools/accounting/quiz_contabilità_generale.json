@@ -1,0 +1,647 @@
+[
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Secondo il documento, qual è l'obiettivo principale per cui l'impresa utilizza il capitale conferito dai soci?",
+        "options": [
+            "Pagare le tasse allo Stato",
+            "Trasformarlo in valore, generando risultati superiori alle risorse impiegate",
+            "Accumulare liquidità in banca senza investirla",
+            "Aumentare i debiti verso i fornitori"
+        ],
+        "correctIndex": 1,
+        "explanation": "Come indicato nel testo, l'impresa utilizza il capitale per svolgere attività economiche con l'obiettivo di trasformarlo in valore ."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Che cosa rappresenta lo Stato Patrimoniale?",
+        "options": [
+            "Il risultato economico dell'anno",
+            "La fotografia in un dato momento del patrimonio della società",
+            "L'insieme dei soli costi sostenuti",
+            "Il dettaglio delle entrate fiscali"
+        ],
+        "correctIndex": 1,
+        "explanation": "Lo Stato Patrimoniale è definito come la fotografia in un dato momento del patrimonio della società, suddiviso in attività, debiti e patrimonio netto ."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Cosa misura il Conto Economico?",
+        "options": [
+            "I debiti verso le banche",
+            "Il patrimonio netto finale",
+            "Il risultato dell'attività dell'impresa (utile o perdita) in un periodo di tempo",
+            "Il valore dei macchinari acquistati"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il Conto Economico misura il risultato dell'attività dell'impresa (Costi e Ricavi) in un periodo di tempo, solitamente l'anno solare ."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "In cosa consiste il principio di competenza economica?",
+        "options": [
+            "I costi e ricavi si registrano solo quando vengono pagati o incassati",
+            "I costi e ricavi si registrano nel periodo in cui si generano, indipendentemente dai flussi finanziari",
+            "I ricavi si registrano quando si emette fattura, i costi quando si pagano",
+            "È il principio che regola esclusivamente il pagamento delle tasse"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il principio di competenza stabilisce che ricavi e costi si registrano nel periodo in cui maturano o si generano, non quando vengono incassati o pagati ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "L'azienda acquista un macchinario pagando immediatamente 10.000€ tramite bonifico bancario. Registra l'operazione.",
+        "availableAccounts": [
+            "Macchinario",
+            "Banca x c/c",
+            "Merci c/acquisti",
+            "Cassa",
+            "Fornitori",
+            "Ricavi di vendita"
+        ],
+        "correctMapping": {
+            "Macchinario": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Il Macchinario è un'attività che aumenta in Dare (impiego), mentre la Banca diminuisce in Avere (fonte) per il pagamento ."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Dove vengono inseriti i costi nel bilancio?",
+        "options": [
+            "Nello Stato Patrimoniale tra le Attività",
+            "Nello Stato Patrimoniale tra le Passività",
+            "Nel Conto Economico",
+            "Nel Fondo Ammortamento"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il Conto Economico contrappone Costi e Ricavi per determinare l'Utile o la Perdita ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "Si rileva una quota di ammortamento annuale di 1.000€. Qual è la scrittura corretta?",
+        "availableAccounts": [
+            "Ammortamento",
+            "Fondo Ammortamento",
+            "Macchinario",
+            "Banca x c/c",
+            "Costi per servizi"
+        ],
+        "correctMapping": {
+            "Ammortamento": "dare",
+            "Fondo Ammortamento": "avere"
+        },
+        "explanation": "L'ammortamento è un costo (Dare), mentre il Fondo Ammortamento rettifica il valore del bene (Avere) ."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "medium",
+        "text": "Se un'azienda acquista un macchinario il 1° marzo, come si calcola l'ammortamento del primo anno?",
+        "options": [
+            "Si calcola l'intera quota annuale (100%)",
+            "Non si calcola ammortamento per il primo anno",
+            "Si calcola in proporzione ai mesi di utilizzo (es. 10/12)",
+            "Si calcola sempre il 50% della quota annuale"
+        ],
+        "correctIndex": 2,
+        "explanation": "La quota del primo anno deve essere proporzionata ai mesi di utilizzo/possesso. Se acquistato a marzo, si calcolano 10/12 della quota annuale ."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "medium",
+        "text": "Qual è la funzione del Fondo Ammortamento nello Stato Patrimoniale?",
+        "options": [
+            "Rappresenta un debito verso i fornitori del macchinario",
+            "Misura quanto del bene è già stato utilizzato e riduce il valore dell'attività",
+            "È un fondo di denaro contante accantonato per il futuro",
+            "Rappresenta l'utile generato dal macchinario"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il Fondo Ammortamento rappresenta la somma delle quote accumulate e misura quanto del bene è stato consumato, riducendone il valore contabile ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "L'impresa ottiene un finanziamento (mutuo) di 50.000€ accreditato in banca. Registra l'operazione.",
+        "availableAccounts": [
+            "Mutui passivi",
+            "Banca x c/c",
+            "Cassa",
+            "Ricavi finanziari",
+            "Macchinario"
+        ],
+        "correctMapping": {
+            "Banca x c/c": "dare",
+            "Mutui passivi": "avere"
+        },
+        "explanation": "La liquidità in Banca aumenta (Dare - Impiego), mentre sorge un debito di finanziamento 'Mutui passivi' (Avere - Fonte) ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Al 31/12 dell'anno N+1 (secondo anno), si rileva l'ammortamento del macchinario (costo 10.000€, aliquota 10%) per l'intero anno.",
+        "availableAccounts": [
+            "Ammortamento",
+            "Fondo Ammortamento",
+            "Macchinario",
+            "Banca x c/c",
+            "Manutenzioni"
+        ],
+        "correctMapping": {
+            "Ammortamento": "dare",
+            "Fondo Ammortamento": "avere"
+        },
+        "explanation": "Nel secondo anno, possedendo il bene per tutti i 12 mesi, la quota è piena: 10% di 10.000€ = 1.000€. Ammortamento in Dare, Fondo in Avere ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "I soci costituiscono l'impresa versando 40.000€ sul conto corrente bancario come Capitale Sociale.",
+        "availableAccounts": [
+            "Capitale Sociale",
+            "Banca x c/c",
+            "Cassa",
+            "Ricavi di vendita",
+            "Utile d'esercizio"
+        ],
+        "correctMapping": {
+            "Banca x c/c": "dare",
+            "Capitale Sociale": "avere"
+        },
+        "explanation": "L'aumento di disponibilità liquida va in Dare (Banca), mentre l'apporto dei soci va in Avere come Capitale Sociale (Fonte - Patrimonio Netto) ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "L'impresa acquista Merci per 5.000€, pagamento differito (nasce un debito).",
+        "availableAccounts": [
+            "Merci c/acquisti",
+            "Fornitori",
+            "Banca x c/c",
+            "Cassa",
+            "Ricavi di vendita"
+        ],
+        "correctMapping": {
+            "Merci c/acquisti": "dare",
+            "Fornitori": "avere"
+        },
+        "explanation": "L'acquisto di merci è un impiego/costo (Dare). Non pagando subito, sorge un debito verso Fornitori (Avere) ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "A fine anno si rileva la perdita d'esercizio di 2.000€. Come viene movimentato il Patrimonio Netto per chiudere il conto economico?",
+        "availableAccounts": [
+            "Perdita d'esercizio",
+            "Conto Economico (Riepilogo)",
+            "Banca x c/c",
+            "Fornitori"
+        ],
+        "correctMapping": {
+            "Perdita d'esercizio": "dare",
+            "Conto Economico (Riepilogo)": "avere"
+        },
+        "explanation": "La perdita è una diminuzione ideale del patrimonio netto (Dare) che scaturisce dal saldo negativo del Conto Economico (Avere) ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Macchinario acquistato il 01/03/N a 10.000€ (vita utile 10 anni). Registra la quota di ammortamento al 31/12/N calcolando l'importo esatto pro-rata temporis.",
+        "availableAccounts": [
+            "Ammortamento (833,33)",
+            "Ammortamento (1.000,00)",
+            "Fondo Ammortamento (833,33)",
+            "Fondo Ammortamento (1.000,00)",
+            "Macchinario"
+        ],
+        "correctMapping": {
+            "Ammortamento (833,33)": "dare",
+            "Fondo Ammortamento (833,33)": "avere"
+        },
+        "explanation": "L'ammortamento è calcolato su 10 mesi (marzo-dicembre). 10.000 x 10% x 10/12 = 833,33€. Si registra Ammortamento (D) a Fondo Ammortamento (A) ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Supponiamo che il macchinario da 10.000€ (amm.to 10%) sia stato acquistato il 1° Dicembre dell'anno N. Registra l'ammortamento dell'anno N.",
+        "availableAccounts": [
+            "Ammortamento (83,33)",
+            "Ammortamento (1.000,00)",
+            "Fondo Ammortamento (83,33)",
+            "Fondo Ammortamento (1.000,00)",
+            "Ratei passivi"
+        ],
+        "correctMapping": {
+            "Ammortamento (83,33)": "dare",
+            "Fondo Ammortamento (83,33)": "avere"
+        },
+        "explanation": "Essendo stato acquistato a dicembre, l'ammortamento è di 1 solo mese. 10.000 x 10% / 12 = 83,33€ [Applicazione logica pro-rata fonte: 49]."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Si riceve una fattura di servizi per 1.000€ a Dicembre, pagamento a Febbraio anno successivo. In base al principio di competenza, come si registra a Dicembre?",
+        "availableAccounts": [
+            "Costi per servizi",
+            "Fornitori",
+            "Banca x c/c",
+            "Ratei attivi",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Costi per servizi": "dare",
+            "Fornitori": "avere"
+        },
+        "explanation": "Secondo il principio di competenza, il costo va registrato quando il servizio è svolto (Dicembre), anche se il pagamento è futuro. Nasce un debito vs Fornitori ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Acquisto Macchinario per 24.000€ il 01/07. Vita utile 10 anni. Registra la quota ammortamento al 31/12.",
+        "availableAccounts": [
+            "Ammortamento (1.200)",
+            "Ammortamento (2.400)",
+            "Fondo Ammortamento (1.200)",
+            "Fondo Ammortamento (2.400)",
+            "Macchinario"
+        ],
+        "correctMapping": {
+            "Ammortamento (1.200)": "dare",
+            "Fondo Ammortamento (1.200)": "avere"
+        },
+        "explanation": "Quota annua 10% di 24.000 = 2.400. Utilizzo Luglio-Dicembre = 6 mesi. Quota = 2.400 / 2 = 1.200€. [Applicazione logica fonte: 49]."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Il macchinario (costo 10.000€) è giunto alla fine del 2° anno. Qual è il valore contabile netto iscritto in Stato Patrimoniale al 31/12/N+1?",
+        "availableAccounts": [
+            "Macchinario (8.166,67)",
+            "Macchinario (10.000) e Fondo (1.833,33)",
+            "Macchinario (10.000) e Fondo (2.000)",
+            "Macchinario (8.000)"
+        ],
+        "correctMapping": {
+            "Macchinario (10.000) e Fondo (1.833,33)": "dare"
+        },
+        "explanation": "Il costo storico resta 10.000. Il Fondo accumula la quota anno 1 (833,33) + quota anno 2 (1.000) = 1.833,33. La rappresentazione corretta vede il Fondo rettificare l'attivo ."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Si paga un premio assicurativo annuale anticipato di 1.200€ il 01/10. Al 31/12 bisogna stornare la parte non di competenza (Risconto). Qual è la scrittura di rettifica?",
+        "availableAccounts": [
+            "Risconti Attivi",
+            "Assicurazioni",
+            "Banca x c/c",
+            "Ratei Passivi"
+        ],
+        "correctMapping": {
+            "Risconti Attivi": "dare",
+            "Assicurazioni": "avere"
+        },
+        "explanation": "L'assicurazione copre fino al 30/09 dell'anno dopo. 9 mesi su 12 sono di competenza futura. 1.200 * 9/12 = 900€. Si toglie il costo (Avere) e si sospende in Risconti Attivi (Dare). [Applicazione logica competenza fonte: 38]."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Un'azienda ha un utile lordo di 5.000€ prima degli ammortamenti. Deve registrare ammortamenti per 8.000€. Qual è il risultato finale e la scrittura di chiusura dell'utile/perdita?",
+        "availableAccounts": [
+            "Perdita d'esercizio (3.000)",
+            "Utile d'esercizio (3.000)",
+            "Conto Economico",
+            "Fondo Ammortamento"
+        ],
+        "correctMapping": {
+            "Perdita d'esercizio (3.000)": "dare",
+            "Conto Economico": "avere"
+        },
+        "explanation": "Se i costi (inclusi ammortamenti) superano i ricavi, si ha una perdita. 5.000 - 8.000 = -3.000. La perdita si registra in Dare del Patrimonio Netto ."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Qual è la differenza tra 'Impieghi' e 'Fonti' nello Stato Patrimoniale?",
+        "options": [
+            "Gli Impieghi sono i debiti, le Fonti sono i crediti",
+            "Gli Impieghi rappresentano come il capitale è stato investito (Attività), le Fonti indicano da dove proviene il capitale (Passività e Netto)",
+            "Gli Impieghi sono i ricavi, le Fonti sono i costi",
+            "Non c'è differenza, sono sinonimi"
+        ],
+        "correctIndex": 1,
+        "explanation": "Nello Stato Patrimoniale, le Fonti (dx) spiegano l'origine delle risorse finanziarie, mentre gli Impieghi (sx) mostrano come tali risorse sono state investite in attività."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Perché l'ammortamento è definito un 'costo non monetario'?",
+        "options": [
+            "Perché non va inserito nel bilancio",
+            "Perché rappresenta una perdita di valore del bene senza che vi sia un'uscita di denaro (pagamento) nell'anno corrente",
+            "Perché si paga solo alla fine della vita del bene",
+            "Perché è una tassa statale"
+        ],
+        "correctIndex": 1,
+        "explanation": "L'ammortamento ripartisce un costo pluriennale già sostenuto in passato; la scrittura contabile (Ammortamento a Fondo) non movimenta Banca o Cassa."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Se i Ricavi sono 100 e i Costi sono 120, qual è il risultato d'esercizio?",
+        "options": [
+            "Utile di 20",
+            "Pareggio",
+            "Perdita di 20",
+            "Credito IVA di 20"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il risultato è la differenza algebrica Ricavi - Costi. 100 - 120 = -20, ovvero una Perdita."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Quale principio contabile impone di registrare i costi nell'anno in cui danno utilità, e non quando vengono pagati?",
+        "options": [
+            "Principio di Cassa",
+            "Principio di Prudenza",
+            "Principio di Competenza Economica",
+            "Principio di Liquidità"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il principio di competenza economica è la base della contabilità ordinaria e scollega la registrazione economica dai flussi finanziari."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "Acquisto di cancelleria per 200€ con pagamento immediato in contanti. Registra l'operazione.",
+        "availableAccounts": [
+            "Spese di cancelleria",
+            "Cassa",
+            "Banca x c/c",
+            "Fornitori",
+            "Merci c/vendite"
+        ],
+        "correctMapping": {
+            "Spese di cancelleria": "dare",
+            "Cassa": "avere"
+        },
+        "explanation": "Si rileva un costo d'esercizio (Spese di cancelleria) in Dare e un'uscita di denaro contante (Cassa) in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "L'azienda riceve un bonifico di 5.000€ da un cliente a saldo di una fattura precedente.",
+        "availableAccounts": [
+            "Banca x c/c",
+            "Crediti v/clienti",
+            "Ricavi di vendita",
+            "Cassa",
+            "Debiti v/fornitori"
+        ],
+        "correctMapping": {
+            "Banca x c/c": "dare",
+            "Crediti v/clienti": "avere"
+        },
+        "explanation": "Entra denaro in banca (Dare) e si chiude il credito verso il cliente che esisteva in precedenza (Avere). Non si registra nuovamente il ricavo."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Dove si trova il 'Capitale Sociale' nel bilancio?",
+        "options": [
+            "Nelle Attività dello Stato Patrimoniale",
+            "Nei Costi del Conto Economico",
+            "Nel Patrimonio Netto dello Stato Patrimoniale (Passività/Fonti)",
+            "Tra i debiti verso banche"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il Capitale Sociale è la voce principale del Patrimonio Netto, iscritta nella sezione delle Passività/Fonti dello Stato Patrimoniale."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Acquisto di un Furgone per 15.000€, pagamento a 30 giorni (nasce debito).",
+        "availableAccounts": [
+            "Automezzi",
+            "Fornitori di immobilizzazioni",
+            "Banca x c/c",
+            "Spese di trasporto",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Automezzi": "dare",
+            "Fornitori di immobilizzazioni": "avere"
+        },
+        "explanation": "L'investimento in beni durevoli va in Dare (Automezzi - Attività). Non pagando subito, sorge un debito verso fornitori in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Pagamento di salari e stipendi ai dipendenti per 4.000€ tramite bonifico.",
+        "availableAccounts": [
+            "Salari e Stipendi",
+            "Banca x c/c",
+            "Dipendenti c/retribuzioni",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Salari e Stipendi": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Il costo del personale (Salari e Stipendi) si registra in Dare. Il pagamento comporta un'uscita di banca in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Ammortamento annuale Software (Costo 1.000€, aliquota 20%). Registra la quota.",
+        "availableAccounts": [
+            "Ammortamento Software",
+            "Fondo Ammortamento Software",
+            "Software",
+            "Banca x c/c"
+        ],
+        "correctMapping": {
+            "Ammortamento Software": "dare",
+            "Fondo Ammortamento Software": "avere"
+        },
+        "explanation": "Quota: 1.000 * 20% = 200€. Si registra il costo (Ammortamento) in Dare e l'accantonamento al fondo (Fondo Amm.to) in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Ottenimento di un prestito di 10.000€ dalla banca.",
+        "availableAccounts": [
+            "Banca x c/c",
+            "Debiti v/banche (finanziamento)",
+            "Ricavi finanziari",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Banca x c/c": "dare",
+            "Debiti v/banche (finanziamento)": "avere"
+        },
+        "explanation": "Aumenta la disponibilità liquida (Banca Dare) e nasce un debito di finanziamento verso la banca (Avere)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "medium",
+        "text": "Se un macchinario costa 10.000€ e il Fondo Ammortamento è pari a 4.000€, qual è il valore netto contabile?",
+        "options": [
+            "14.000€",
+            "10.000€",
+            "6.000€",
+            "4.000€"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il valore netto contabile è dato dalla differenza tra il Costo Storico e il Fondo Ammortamento accumulato (10.000 - 4.000 = 6.000)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Rilevazione di Ricavi per prestazioni di servizi pari a 800€, incassate in contanti.",
+        "availableAccounts": [
+            "Cassa",
+            "Ricavi per prestazioni",
+            "Banca x c/c",
+            "Crediti v/clienti"
+        ],
+        "correctMapping": {
+            "Cassa": "dare",
+            "Ricavi per prestazioni": "avere"
+        },
+        "explanation": "Entrata di contanti in Cassa (Dare) a fronte di un Ricavo (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Rimborso di una rata del mutuo: quota capitale 1.000€ (interessi 0 per semplicità).",
+        "availableAccounts": [
+            "Mutui passivi",
+            "Banca x c/c",
+            "Costi vari",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Mutui passivi": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "La restituzione del prestito riduce il debito (Mutui passivi in Dare) e riduce la liquidità (Banca in Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Acquisto Arredamento il 01/04 per 6.000€. Aliquota amm.to 10%. Calcola e registra la quota al 31/12.",
+        "availableAccounts": [
+            "Ammortamento Arredi (450)",
+            "Ammortamento Arredi (600)",
+            "Fondo Ammortamento Arredi (450)",
+            "Fondo Ammortamento Arredi (600)",
+            "Arredi"
+        ],
+        "correctMapping": {
+            "Ammortamento Arredi (450)": "dare",
+            "Fondo Ammortamento Arredi (450)": "avere"
+        },
+        "explanation": "Quota annua: 600€. Mesi utilizzo: 9 (apr-dic). Calcolo: 600 * 9/12 = 450€. Scrittura: Ammortamento (D) a Fondo (A)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Acquisto PC il 01/11 per 2.400€. Vita utile 4 anni (25%). Registra l'ammortamento dell'anno.",
+        "availableAccounts": [
+            "Ammortamento (100)",
+            "Ammortamento (600)",
+            "Fondo Ammortamento (100)",
+            "Fondo Ammortamento (600)",
+            "Macchine d'ufficio"
+        ],
+        "correctMapping": {
+            "Ammortamento (100)": "dare",
+            "Fondo Ammortamento (100)": "avere"
+        },
+        "explanation": "Quota annua: 2.400 * 25% = 600€. Mesi utilizzo: 2 (nov-dic). Calcolo: 600 * 2/12 = 100€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "A fine anno si rileva un Utile d'esercizio di 15.000€. Dopo l'approvazione del bilancio, i soci decidono di lasciare l'utile in azienda come riserva. Registra la destinazione dell'utile.",
+        "availableAccounts": [
+            "Utile d'esercizio",
+            "Riserve (Patrimonio Netto)",
+            "Banca x c/c",
+            "Soci c/dividendi"
+        ],
+        "correctMapping": {
+            "Utile d'esercizio": "dare",
+            "Riserve (Patrimonio Netto)": "avere"
+        },
+        "explanation": "L'Utile d'esercizio (che era in Avere come saldo) si chiude in Dare. La destinazione a riserva aumenta il Patrimonio Netto in Avere sotto la voce Riserve."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Si rileva che un credito verso un cliente di 500€ è definitivamente inesigibile (perdita). Registra lo stralcio.",
+        "availableAccounts": [
+            "Perdite su crediti",
+            "Crediti v/clienti",
+            "Banca x c/c",
+            "Ricavi di vendita"
+        ],
+        "correctMapping": {
+            "Perdite su crediti": "dare",
+            "Crediti v/clienti": "avere"
+        },
+        "explanation": "Si cancella l'attività (Crediti v/clienti in Avere) e si registra un costo straordinario o operativo (Perdite su crediti in Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Chiusura generale dei conti: il totale dei Costi è 80.000€, il totale dei Ricavi è 95.000€. Registra l'utile nel conto di riepilogo.",
+        "availableAccounts": [
+            "Conto Economico (Riepilogo)",
+            "Utile d'esercizio",
+            "Perdita d'esercizio",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Conto Economico (Riepilogo)": "dare",
+            "Utile d'esercizio": "avere"
+        },
+        "explanation": "Il CE ha un saldo Avere di 15.000 (95k ricavi - 80k costi). Per chiuderlo si scrive in Dare 15.000, contropartita Utile d'esercizio in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Acquisto impianto il 15 Dicembre per 120.000€ (Amm.to 10%). Si decide di ammortizzare per metà mese (1/24) o secondo prassi commerciale per l'intero mese? (Assumiamo intero mese).",
+        "availableAccounts": [
+            "Ammortamento (1.000)",
+            "Ammortamento (12.000)",
+            "Fondo Ammortamento (1.000)",
+            "Fondo Ammortamento (12.000)"
+        ],
+        "correctMapping": {
+            "Ammortamento (1.000)": "dare",
+            "Fondo Ammortamento (1.000)": "avere"
+        },
+        "explanation": "Quota annua 12.000€. Utilizzo 1 mese (Dicembre). Quota: 12.000 / 12 = 1.000€. Si registra Ammortamento a Fondo."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "hard",
+        "text": "Cosa succede se si capitalizza un costo di manutenzione invece di spesarlo a Conto Economico?",
+        "options": [
+            "L'utile dell'esercizio diminuisce",
+            "L'utile dell'esercizio aumenta indebitamente",
+            "Non cambia nulla",
+            "Il debito verso fornitori diminuisce"
+        ],
+        "correctIndex": 1,
+        "explanation": "Capitalizzare un costo significa inserirlo tra le Attività (SP) anziché tra i Costi (CE). Togliendo costi dal CE, l'Utile risulta più alto."
+    }
+]

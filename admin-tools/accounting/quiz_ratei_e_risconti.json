@@ -1,0 +1,645 @@
+[
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Secondo i principi contabili analizzati, qual è l'obiettivo principale per cui l'impresa utilizza il capitale conferito dai soci?",
+        "options": [
+            "Pagare le tasse allo Stato",
+            "Trasformarlo in valore, generando risultati superiori alle risorse impiegate",
+            "Accumulare liquidità in banca senza investirla",
+            "Aumentare i debiti verso i fornitori"
+        ],
+        "correctIndex": 1,
+        "explanation": "L'impresa utilizza il capitale per svolgere attività economiche con l'obiettivo di trasformarlo in valore, non semplicemente per accumularlo o pagare debiti."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Che cosa rappresenta lo Stato Patrimoniale?",
+        "options": [
+            "Il risultato economico dell'anno",
+            "La fotografia in un dato momento del patrimonio della società (Attività, Passività, Netto)",
+            "L'insieme dei soli costi sostenuti nell'esercizio",
+            "Il dettaglio delle sole entrate fiscali"
+        ],
+        "correctIndex": 1,
+        "explanation": "Lo Stato Patrimoniale è definito come la fotografia statica del patrimonio della società in un preciso istante, suddiviso in attività, passività e patrimonio netto."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Cosa misura il Conto Economico?",
+        "options": [
+            "I debiti verso le banche",
+            "Il patrimonio netto finale",
+            "Il risultato dell'attività dell'impresa (Utile o Perdita) in un periodo di tempo",
+            "Il valore residuo dei macchinari"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il Conto Economico è il prospetto dinamico che misura il risultato dell'attività dell'impresa contrapponendo Costi e Ricavi in un determinato periodo di tempo."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Qual è la natura dell'IVA per l'impresa?",
+        "options": [
+            "È un costo deducibile",
+            "È un ricavo tassabile",
+            "È una partita di giro (neutrale), l'impresa agisce come esattore per lo Stato",
+            "È un investimento a lungo termine"
+        ],
+        "correctIndex": 2,
+        "explanation": "L'IVA non rappresenta né un costo né un ricavo per l'impresa, ma un debito o credito verso lo Stato (partita di giro)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "In cosa consiste il principio di competenza economica?",
+        "options": [
+            "I costi e ricavi si registrano solo quando vengono pagati o incassati",
+            "I costi e ricavi si registrano nel periodo in cui maturano, indipendentemente dai flussi finanziari",
+            "I ricavi si registrano quando si emette fattura, i costi quando si pagano",
+            "È il principio che regola esclusivamente il pagamento delle tasse"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il principio di competenza stabilisce che i fatti di gestione vanno registrati nell'esercizio in cui trovano la loro giustificazione economica (maturazione), non in quello in cui avviene il movimento di denaro."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "L'azienda acquista un macchinario pagando immediatamente 10.000€ tramite bonifico bancario. Registra l'operazione.",
+        "availableAccounts": [
+            "Macchinario",
+            "Banca x c/c",
+            "Merci c/acquisti",
+            "Cassa",
+            "Fornitori",
+            "Ricavi di vendita"
+        ],
+        "correctMapping": {
+            "Macchinario": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Il Macchinario è un'attività che aumenta in Dare (impiego di risorse), mentre la Banca diminuisce in Avere (fonte delle risorse) a seguito del pagamento."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "Si rileva una quota di ammortamento annuale di 1.000€. Qual è la scrittura corretta?",
+        "availableAccounts": [
+            "Ammortamento",
+            "Fondo Ammortamento",
+            "Macchinario",
+            "Banca x c/c",
+            "Costi per servizi"
+        ],
+        "correctMapping": {
+            "Ammortamento": "dare",
+            "Fondo Ammortamento": "avere"
+        },
+        "explanation": "L'ammortamento rappresenta un costo d'esercizio e va in Dare; la contropartita è il Fondo Ammortamento in Avere, che rettifica il valore del bene patrimoniale."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "medium",
+        "text": "Qual è la funzione del Fondo Ammortamento nello Stato Patrimoniale?",
+        "options": [
+            "Rappresenta un debito verso i fornitori del macchinario",
+            "Misura quanto del bene è già stato utilizzato e ne riduce il valore contabile",
+            "È un fondo di denaro contante accantonato per il futuro",
+            "Rappresenta l'utile generato dal macchinario"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il Fondo Ammortamento è una posta rettificativa dell'Attivo: accumula le quote di ammortamento degli anni passati per mostrare il valore residuo del bene."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Si procede alla liquidazione IVA del mese. IVA a Debito: 440€, IVA a Credito: 220€. Registra la rilevazione del debito verso l'Erario.",
+        "availableAccounts": [
+            "IVA a Debito",
+            "IVA a Credito",
+            "Erario c/IVA (da versare)",
+            "Banca x c/c"
+        ],
+        "correctMapping": {
+            "IVA a Debito": "dare",
+            "IVA a Credito": "avere",
+            "Erario c/IVA (da versare)": "avere"
+        },
+        "explanation": "Si chiudono i conti IVA: quello a Debito (che era in Avere) si chiude in Dare, quello a Credito (che era in Dare) si chiude in Avere. La differenza è il debito netto da versare."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Il 16 del mese successivo si versa l'IVA dovuta di 220€ tramite banca.",
+        "availableAccounts": [
+            "Erario c/IVA (da versare)",
+            "Banca x c/c",
+            "IVA a Debito",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Erario c/IVA (da versare)": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Il pagamento estingue il debito verso l'Erario (Dare) comportando un'uscita di banca (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "L'azienda ha interessi passivi sul mutuo maturati per 13.500€ nell'anno in corso, ma il pagamento avverrà l'anno prossimo. Registra l'assestamento.",
+        "availableAccounts": [
+            "Interessi passivi",
+            "Ratei passivi",
+            "Banca x c/c",
+            "Ratei attivi"
+        ],
+        "correctMapping": {
+            "Interessi passivi": "dare",
+            "Ratei passivi": "avere"
+        },
+        "explanation": "Poiché il costo è maturato ma non ancora pagato, si registra il costo (Interessi passivi) in Dare e si accende un debito presunto (Rateo Passivo) in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Pagato premio assicurativo annuale anticipato di 24.000€ il 01/09. Al 31/12 si calcola la quota da rinviare al futuro (Risconto).",
+        "availableAccounts": [
+            "Risconti attivi",
+            "Costi assicurativi",
+            "Banca x c/c",
+            "Ratei passivi"
+        ],
+        "correctMapping": {
+            "Risconti attivi": "dare",
+            "Costi assicurativi": "avere"
+        },
+        "explanation": "L'assicurazione copre 4 mesi dell'anno corrente e 8 mesi dell'anno successivo. La quota futura (16.000€) va stornata dai costi (Avere) e sospesa nei Risconti Attivi (Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Acquisto macchinario il 01/03 per 10.000€. Vita utile 10 anni (10% annuo). Registra l'ammortamento del primo anno (pro-rata temporis).",
+        "availableAccounts": [
+            "Ammortamento Macchinari (1.000)",
+            "Ammortamento Macchinari (833,33)",
+            "Fondo Ammortamento (833,33)",
+            "Fondo Ammortamento (1.000)",
+            "Banca x c/c"
+        ],
+        "correctMapping": {
+            "Ammortamento Macchinari (833,33)": "dare",
+            "Fondo Ammortamento (833,33)": "avere"
+        },
+        "explanation": "La quota annuale sarebbe 1.000€, ma il bene è stato posseduto solo per 10 mesi (marzo-dicembre). Il calcolo corretto è 1.000 * 10/12 = 833,33€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "I soci costituiscono l'impresa versando 50.000€ sul conto corrente bancario.",
+        "availableAccounts": [
+            "Banca x c/c",
+            "Capitale Sociale",
+            "Cassa",
+            "Ricavi"
+        ],
+        "correctMapping": {
+            "Banca x c/c": "dare",
+            "Capitale Sociale": "avere"
+        },
+        "explanation": "L'operazione comporta un'entrata di liquidità (Banca in Dare) e la costituzione del Patrimonio Netto iniziale (Capitale Sociale in Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Fitti Attivi: canone annuo 36.000€, che matura nell'anno ma sarà incassato posticipatamente il 31/01 dell'anno successivo. Registra il Rateo Attivo al 31/12.",
+        "availableAccounts": [
+            "Ratei attivi",
+            "Fitti attivi",
+            "Banca x c/c",
+            "Risconti passivi"
+        ],
+        "correctMapping": {
+            "Ratei attivi": "dare",
+            "Fitti attivi": "avere"
+        },
+        "explanation": "Si deve rilevare un ricavo di competenza dell'anno (Fitti attivi in Avere) anche se non ancora incassato. La contropartita è un credito presunto, il Rateo Attivo (Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Incasso anticipato il 01/10 di 15.000€ per una consulenza che durerà 5 mesi (fino a fine febbraio). Registra la rettifica (Risconto Passivo) al 31/12.",
+        "availableAccounts": [
+            "Ricavi da consulenze",
+            "Risconti passivi",
+            "Banca x c/c",
+            "Ratei attivi"
+        ],
+        "correctMapping": {
+            "Ricavi da consulenze": "dare",
+            "Risconti passivi": "avere"
+        },
+        "explanation": "Il ricavo totale (15.000) copre 5 mesi. 2 mesi (gennaio-febbraio) sono di competenza futura. 15.000 * 2/5 = 6.000€. Si riduce il ricavo (Dare) e si accende il Risconto Passivo (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Al 31/03/N+1 si pagano gli interessi del mutuo (18.000€ totali) di cui 13.500€ erano già stati imputati come Rateo Passivo nell'anno N. Registra il pagamento.",
+        "availableAccounts": [
+            "Ratei passivi",
+            "Interessi passivi",
+            "Banca x c/c",
+            "Fondo rischi"
+        ],
+        "correctMapping": {
+            "Ratei passivi": "dare",
+            "Interessi passivi": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Al momento del pagamento si chiude il debito presunto dell'anno precedente (Ratei passivi in Dare), si registra la quota di competenza del nuovo anno (Interessi passivi in Dare) e l'uscita totale di banca."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Liquidazione IVA: IVA a Debito 1.000€, IVA a Credito 1.500€. Registra la chiusura dei conti IVA.",
+        "availableAccounts": [
+            "IVA a Debito",
+            "IVA a Credito",
+            "Erario c/IVA (a credito)",
+            "Banca x c/c"
+        ],
+        "correctMapping": {
+            "IVA a Debito": "dare",
+            "Erario c/IVA (a credito)": "dare",
+            "IVA a Credito": "avere"
+        },
+        "explanation": "Poiché il credito supera il debito, non c'è versamento. Si chiudono i mastrini (Debito in Dare, Credito in Avere) e l'eccedenza viene registrata come credito verso l'Erario in Dare."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Si rileva una perdita d'esercizio di 3.000€ derivante dal saldo del Conto Economico. Qual è la scrittura di destinazione a Patrimonio Netto?",
+        "availableAccounts": [
+            "Perdita d'esercizio",
+            "Conto Economico (Riepilogo)",
+            "Utile d'esercizio",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Perdita d'esercizio": "dare",
+            "Conto Economico (Riepilogo)": "avere"
+        },
+        "explanation": "Il Conto Economico ha un saldo Dare (costi > ricavi), quindi si chiude in Avere. La contropartita è la 'Perdita d'esercizio' che va in Dare, riducendo idealmente il Patrimonio Netto."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Macchinario acquistato il 1° Dicembre per 12.000€ (ammortamento annuo 10%). Calcola e registra l'ammortamento esatto dell'anno.",
+        "availableAccounts": [
+            "Ammortamento (100)",
+            "Ammortamento (1.200)",
+            "Fondo Ammortamento (100)",
+            "Fondo Ammortamento (1.200)",
+            "Ratei passivi"
+        ],
+        "correctMapping": {
+            "Ammortamento (100)": "dare",
+            "Fondo Ammortamento (100)": "avere"
+        },
+        "explanation": "La quota annuale sarebbe 1.200€, ma il bene è stato utilizzato solo 1 mese (dicembre). 1.200 / 12 = 100€. Si registra Ammortamento a Fondo Ammortamento per 100€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Ricevuta fattura a Dicembre per servizi di manutenzione eseguiti a Dicembre (1.000€ + IVA), pagamento a 60 giorni. Come impatta il principio di competenza e quale conto usi?",
+        "availableAccounts": [
+            "Manutenzioni",
+            "IVA a Credito",
+            "Debiti v/fornitori",
+            "Ratei passivi",
+            "Risconti attivi"
+        ],
+        "correctMapping": {
+            "Manutenzioni": "dare",
+            "IVA a Credito": "dare",
+            "Debiti v/fornitori": "avere"
+        },
+        "explanation": "Essendo il servizio già erogato nell'esercizio, il costo è di competenza piena e va registrato subito come fattura da ricevere o debito fornitore, non come rateo (che si usa per contratti a cavallo d'anno)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Cosa si intende per 'Manifestazione Finanziaria'?",
+        "options": [
+            "Il momento in cui si consuma il bene",
+            "Il momento in cui avviene l'incasso o il pagamento (movimento di denaro)",
+            "Il momento in cui si firma il contratto",
+            "La data di bilancio (31/12)"
+        ],
+        "correctIndex": 1,
+        "explanation": "La manifestazione finanziaria corrisponde all'effettivo flusso di cassa (entrata o uscita monetaria) o alla nascita del debito/credito numerario."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Quale tra i seguenti è un esempio tipico di Risconto Attivo?",
+        "options": [
+            "Interessi pagati posticipatamente",
+            "Premio assicurativo pagato anticipatamente per l'anno successivo",
+            "Fattura di vendita incassata subito",
+            "Acquisto di materie prime"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il Risconto Attivo sorge quando si è pagato un costo in anticipo (es. assicurazione) per un servizio non ancora del tutto goduto."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Se un costo è di competenza dell'anno ma verrà pagato l'anno prossimo, cosa devo rilevare?",
+        "options": [
+            "Un Risconto Attivo",
+            "Un Rateo Passivo",
+            "Un Rateo Attivo",
+            "Un Risconto Passivo"
+        ],
+        "correctIndex": 1,
+        "explanation": "Costo di competenza + Pagamento futuro = Rateo Passivo (Debito presunto)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "I Ratei sono valori...",
+        "options": [
+            "Finanziari presunti (crediti o debiti)",
+            "Economici sospesi (costi o ricavi rinviati)",
+            "Di pura liquidità",
+            "Voci del Patrimonio Netto"
+        ],
+        "correctIndex": 0,
+        "explanation": "I Ratei misurano quote di crediti o debiti in corso di maturazione (valori finanziari presunti) per integrare costi/ricavi."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "I Risconti sono valori...",
+        "options": [
+            "Finanziari presunti",
+            "Economici sospesi (costi o ricavi da rinviare al futuro)",
+            "Debiti verso banche",
+            "Crediti verso clienti"
+        ],
+        "correctIndex": 1,
+        "explanation": "I Risconti servono a 'sospendere' e rinviare al futuro quote di costo o ricavo già rilevate finanziariamente ma non di competenza."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "A fine anno si deve registrare un Rateo Passivo per interessi di 100€. Qual è la scrittura?",
+        "availableAccounts": [
+            "Interessi passivi",
+            "Ratei passivi",
+            "Banca",
+            "Interessi attivi"
+        ],
+        "correctMapping": {
+            "Interessi passivi": "dare",
+            "Ratei passivi": "avere"
+        },
+        "explanation": "Si imputa il costo 'Interessi passivi' in Dare e si accende il debito presunto 'Ratei passivi' in Avere."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Il Risconto Passivo va inserito...",
+        "options": [
+            "Tra i Costi del Conto Economico",
+            "Tra le Attività dello Stato Patrimoniale",
+            "Tra le Passività dello Stato Patrimoniale",
+            "Tra i Ricavi del Conto Economico"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il Risconto Passivo rettifica un ricavo, quindi rappresenta un 'obbligo' di fornire servizi in futuro: va nelle Passività."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Pagato affitto annuale anticipato di 12.000€ il 01/06. Calcola e registra il Risconto Attivo al 31/12.",
+        "availableAccounts": [
+            "Risconti attivi (5.000)",
+            "Fitti passivi (5.000)",
+            "Risconti attivi (7.000)",
+            "Ratei attivi (5.000)"
+        ],
+        "correctMapping": {
+            "Risconti attivi (5.000)": "dare",
+            "Fitti passivi (5.000)": "avere"
+        },
+        "explanation": "Competenza: 7 mesi (giu-dic). Da rinviare: 5 mesi (gen-mag). 12.000 * 5/12 = 5.000€. Risconti Attivi (D) a Fitti Passivi (A)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Incassato canone di assistenza annuale anticipato di 2.400€ il 01/10. Registra la rettifica (Risconto) al 31/12.",
+        "availableAccounts": [
+            "Ricavi assistenza",
+            "Risconti passivi (1.800)",
+            "Risconti passivi (600)",
+            "Ratei attivi"
+        ],
+        "correctMapping": {
+            "Ricavi assistenza": "dare",
+            "Risconti passivi (1.800)": "avere"
+        },
+        "explanation": "Competenza anno: 3 mesi (ott-dic). Competenza futura: 9 mesi (gen-set). 2.400 * 9/12 = 1.800€. Si stornano 1.800€ di ricavi."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Mutuo con interessi posticipati annuali di 1.200€ scadenti il 01/03/N+1. Registra il Rateo Passivo al 31/12/N.",
+        "availableAccounts": [
+            "Interessi passivi",
+            "Ratei passivi",
+            "Banca",
+            "Risconti attivi"
+        ],
+        "correctMapping": {
+            "Interessi passivi": "dare",
+            "Ratei passivi": "avere"
+        },
+        "explanation": "Il periodo di maturazione va dal 01/03/N al 31/12/N (10 mesi). 1.200 * 10/12 = 1.000€. Costo in Dare, Rateo Passivo in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Investimento in titoli che paga cedola annuale posticipata di 600€ il 30/06/N+1. Registra il Rateo Attivo al 31/12/N.",
+        "availableAccounts": [
+            "Ratei attivi",
+            "Interessi attivi",
+            "Banca",
+            "Risconti passivi"
+        ],
+        "correctMapping": {
+            "Ratei attivi": "dare",
+            "Interessi attivi": "avere"
+        },
+        "explanation": "Maturazione: dal 01/07/N al 31/12/N (6 mesi). 600 * 6/12 = 300€. Ratei attivi (D) a Interessi attivi (A)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Assicurazione pagata 3.650€ per 365 giorni dal 01/12. Calcola risconto in giorni.",
+        "availableAccounts": [
+            "Risconti attivi (3.340)",
+            "Assicurazioni (3.340)",
+            "Risconti attivi (310)",
+            "Ratei passivi"
+        ],
+        "correctMapping": {
+            "Risconti attivi (3.340)": "dare",
+            "Assicurazioni (3.340)": "avere"
+        },
+        "explanation": "Competenza: 31 giorni (dicembre). Risconto (futuro): 334 giorni. 3.650 / 365 * 334 = 3.340€. Si stornano 3.340€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Canone leasing annuo 6.000€ pagato anticipatamente il 01/04. Calcola il costo di competenza effettiva dell'anno (non la scrittura, ma il saldo che resta a CE).",
+        "availableAccounts": [
+            "Canoni Leasing (4.500)",
+            "Canoni Leasing (1.500)",
+            "Risconti attivi (4.500)",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Canoni Leasing (4.500)": "dare"
+        },
+        "explanation": "Questa è una domanda di verifica: il costo di competenza è 9 mesi (apr-dic). 6.000 * 9/12 = 4.500€. Nel mastrino 'Canoni Leasing' dopo il risconto resteranno 4.500€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Interessi attivi su c/c maturati ma non ancora accreditati al 31/12 pari a 50€. Scrittura.",
+        "availableAccounts": [
+            "Ratei attivi",
+            "Interessi attivi",
+            "Banca",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Ratei attivi": "dare",
+            "Interessi attivi": "avere"
+        },
+        "explanation": "Rateo Attivo (Credito) in Dare, Ricavo (Interessi attivi) in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Pagamento il 01/03/N+1 di interessi passivi totali 1.200€ (di cui 1.000€ maturati in N). Registra il pagamento.",
+        "availableAccounts": [
+            "Ratei passivi",
+            "Interessi passivi",
+            "Banca x c/c",
+            "Risconti attivi"
+        ],
+        "correctMapping": {
+            "Ratei passivi": "dare",
+            "Interessi passivi": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Dare: Ratei passivi (1.000 - chiusura debito anno prec.) e Interessi passivi (200 - competenza anno nuovo). Avere: Banca (1.200)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Riapertura dei conti al 01/01/N+1: come si movimenta il Risconto Attivo (1.000€) registrato l'anno prima?",
+        "availableAccounts": [
+            "Costo sottostante (es. Assicurazioni)",
+            "Risconti attivi",
+            "Banca",
+            "Ratei passivi"
+        ],
+        "correctMapping": {
+            "Costo sottostante (es. Assicurazioni)": "dare",
+            "Risconti attivi": "avere"
+        },
+        "explanation": "Il Risconto Attivo (che era in Dare SP) si chiude in Avere. La contropartita è il Costo (Dare) che viene così 'reimmesso' nell'anno di competenza (N+1)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Un'azienda ha registrato un Maxicanone leasing di 20.000€ il 01/01 per un contratto di 5 anni. Calcola e registra il Risconto al 31/12.",
+        "availableAccounts": [
+            "Risconti attivi (16.000)",
+            "Canoni Leasing (16.000)",
+            "Risconti attivi (4.000)",
+            "Ratei passivi (16.000)"
+        ],
+        "correctMapping": {
+            "Risconti attivi (16.000)": "dare",
+            "Canoni Leasing (16.000)": "avere"
+        },
+        "explanation": "Il costo copre 5 anni. Competenza anno 1: 20.000 / 5 = 4.000€. Da rinviare (Risconto): 16.000€. Scrittura: Risconti Attivi (D) a Canoni (A)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Incasso posticipato di una cedola biennale (24 mesi) di 2.400€ che avverrà il 30/06/N+1. Il periodo è iniziato il 01/07/N-1. Calcola il Rateo al 31/12/N.",
+        "availableAccounts": [
+            "Ratei attivi",
+            "Interessi attivi",
+            "Risconti passivi",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Ratei attivi": "dare",
+            "Interessi attivi": "avere"
+        },
+        "explanation": "Attenzione: siamo al 31/12/N. Il periodo è iniziato 18 mesi fa (Lug N-1). La cedola matura su 2 anni. Al 31/12/N mancano 6 mesi all'incasso, ma l'importo MATURATO nell'anno N è 12 mesi (1.200€). Tuttavia, il RATEO cumulato deve coprire tutto il maturato finora (18 mesi = 1.800€)? O si chiede la scrittura dell'anno? Di solito si integra la quota ANNUALE. Scrittura anno N: Ratei attivi a Interessi attivi per 1.200€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Incasso il 01/02/N+1 di un affitto trimestrale posticipato di 3.000€ (nov-dic-gen). Registra l'incasso sapendo che in N era stato rilevato il rateo.",
+        "availableAccounts": [
+            "Banca x c/c",
+            "Ratei attivi",
+            "Fitti attivi",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Banca x c/c": "dare",
+            "Ratei attivi": "avere",
+            "Fitti attivi": "avere"
+        },
+        "explanation": "Banca incassa 3.000 (D). Si chiude il Rateo Attivo maturato in N (2 mesi = 2.000€ in A). Si registra il ricavo di gennaio (1.000€ in A)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Pagamento premio assicurativo 1.200€ che copre dal 01/05/N al 30/04/N+1. Qual è l'impatto complessivo sul risultato d'esercizio N (Costo effettivo)?",
+        "availableAccounts": [
+            "Assicurazioni (800)",
+            "Assicurazioni (1.200)",
+            "Risconti attivi (400)",
+            "Banca (1.200)"
+        ],
+        "correctMapping": {
+            "Assicurazioni (800)": "dare"
+        },
+        "explanation": "Costo pagato 1.200. Risconto (gen-apr) 400. Costo di competenza (mag-dic) = 8 mesi = 800€. Il saldo del conto Assicurazioni nel CE sarà 800€."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "hard",
+        "text": "Se dimentico di registrare un Rateo Passivo di 1.000€, come risulta il bilancio?",
+        "options": [
+            "Utile corretto, Debiti sottostimati",
+            "Utile sovrastimato (più alto del reale), Debiti sottostimati",
+            "Utile sottostimato, Debiti sovrastimati",
+            "Nessun impatto sull'utile"
+        ],
+        "correctIndex": 1,
+        "explanation": "Omettendo un costo (Rateo Passivo), i costi totali sono più bassi, quindi l'Utile risulta falsamente più alto. Anche i debiti nello SP risultano più bassi del vero."
+    }
+]

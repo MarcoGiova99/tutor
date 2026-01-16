@@ -1,0 +1,658 @@
+[
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Secondo i principi contabili analizzati, qual è l'obiettivo principale per cui l'impresa utilizza il capitale conferito dai soci?",
+        "options": [
+            "Pagare le tasse allo Stato",
+            "Trasformarlo in valore, generando risultati superiori alle risorse impiegate",
+            "Accumulare liquidità in banca senza investirla",
+            "Aumentare i debiti verso i fornitori"
+        ],
+        "correctIndex": 1,
+        "explanation": "L'impresa utilizza il capitale per svolgere attività economiche con l'obiettivo di trasformarlo in valore, non semplicemente per accumularlo o pagare debiti."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Che cosa rappresenta lo Stato Patrimoniale?",
+        "options": [
+            "Il risultato economico dell'anno",
+            "La fotografia in un dato momento del patrimonio della società (Attività, Passività, Netto)",
+            "L'insieme dei soli costi sostenuti nell'esercizio",
+            "Il dettaglio delle sole entrate fiscali"
+        ],
+        "correctIndex": 1,
+        "explanation": "Lo Stato Patrimoniale è definito come la fotografia statica del patrimonio della società in un preciso istante, suddiviso in attività, passività e patrimonio netto."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Cosa misura il Conto Economico?",
+        "options": [
+            "I debiti verso le banche",
+            "Il patrimonio netto finale",
+            "Il risultato dell'attività dell'impresa (Utile o Perdita) in un periodo di tempo",
+            "Il valore residuo dei macchinari"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il Conto Economico è il prospetto dinamico che misura il risultato dell'attività dell'impresa contrapponendo Costi e Ricavi in un determinato periodo di tempo."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Qual è la natura dell'IVA per l'impresa?",
+        "options": [
+            "È un costo deducibile",
+            "È un ricavo tassabile",
+            "È una partita di giro (neutrale), l'impresa agisce come esattore per lo Stato",
+            "È un investimento a lungo termine"
+        ],
+        "correctIndex": 2,
+        "explanation": "L'IVA non rappresenta né un costo né un ricavo per l'impresa, ma un debito o credito verso lo Stato (partita di giro)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "In cosa consiste il principio di competenza economica?",
+        "options": [
+            "I costi e ricavi si registrano solo quando vengono pagati o incassati",
+            "I costi e ricavi si registrano nel periodo in cui maturano, indipendentemente dai flussi finanziari",
+            "I ricavi si registrano quando si emette fattura, i costi quando si pagano",
+            "È il principio che regola esclusivamente il pagamento delle tasse"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il principio di competenza stabilisce che i fatti di gestione vanno registrati nell'esercizio in cui trovano la loro giustificazione economica (maturazione), non in quello in cui avviene il movimento di denaro."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "L'azienda acquista un macchinario pagando immediatamente 10.000€ tramite bonifico bancario. Registra l'operazione.",
+        "availableAccounts": [
+            "Macchinario",
+            "Banca x c/c",
+            "Merci c/acquisti",
+            "Cassa",
+            "Fornitori",
+            "Ricavi di vendita"
+        ],
+        "correctMapping": {
+            "Macchinario": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Il Macchinario è un'attività che aumenta in Dare (impiego di risorse), mentre la Banca diminuisce in Avere (fonte delle risorse) a seguito del pagamento."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "Si rileva una quota di ammortamento annuale di 1.000€. Qual è la scrittura corretta?",
+        "availableAccounts": [
+            "Ammortamento",
+            "Fondo Ammortamento",
+            "Macchinario",
+            "Banca x c/c",
+            "Costi per servizi"
+        ],
+        "correctMapping": {
+            "Ammortamento": "dare",
+            "Fondo Ammortamento": "avere"
+        },
+        "explanation": "L'ammortamento rappresenta un costo d'esercizio e va in Dare; la contropartita è il Fondo Ammortamento in Avere, che rettifica il valore del bene patrimoniale."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "medium",
+        "text": "Qual è la funzione del Fondo Ammortamento nello Stato Patrimoniale?",
+        "options": [
+            "Rappresenta un debito verso i fornitori del macchinario",
+            "Misura quanto del bene è già stato utilizzato e ne riduce il valore contabile",
+            "È un fondo di denaro contante accantonato per il futuro",
+            "Rappresenta l'utile generato dal macchinario"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il Fondo Ammortamento è una posta rettificativa dell'Attivo: accumula le quote di ammortamento degli anni passati per mostrare il valore residuo del bene."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Si procede alla liquidazione IVA del mese. IVA a Debito: 440€, IVA a Credito: 220€. Registra la rilevazione del debito verso l'Erario.",
+        "availableAccounts": [
+            "IVA a Debito",
+            "IVA a Credito",
+            "Erario c/IVA (da versare)",
+            "Banca x c/c"
+        ],
+        "correctMapping": {
+            "IVA a Debito": "dare",
+            "IVA a Credito": "avere",
+            "Erario c/IVA (da versare)": "avere"
+        },
+        "explanation": "Si chiudono i conti IVA: quello a Debito (che era in Avere) si chiude in Dare, quello a Credito (che era in Dare) si chiude in Avere. La differenza è il debito netto da versare."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Il 16 del mese successivo si versa l'IVA dovuta di 220€ tramite banca.",
+        "availableAccounts": [
+            "Erario c/IVA (da versare)",
+            "Banca x c/c",
+            "IVA a Debito",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Erario c/IVA (da versare)": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Il pagamento estingue il debito verso l'Erario (Dare) comportando un'uscita di banca (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "L'azienda ha interessi passivi sul mutuo maturati per 13.500€ nell'anno in corso, ma il pagamento avverrà l'anno prossimo. Registra l'assestamento.",
+        "availableAccounts": [
+            "Interessi passivi",
+            "Ratei passivi",
+            "Banca x c/c",
+            "Ratei attivi"
+        ],
+        "correctMapping": {
+            "Interessi passivi": "dare",
+            "Ratei passivi": "avere"
+        },
+        "explanation": "Poiché il costo è maturato ma non ancora pagato, si registra il costo (Interessi passivi) in Dare e si accende un debito presunto (Rateo Passivo) in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Pagato premio assicurativo annuale anticipato di 24.000€ il 01/09. Al 31/12 si calcola la quota da rinviare al futuro (Risconto).",
+        "availableAccounts": [
+            "Risconti attivi",
+            "Costi assicurativi",
+            "Banca x c/c",
+            "Ratei passivi"
+        ],
+        "correctMapping": {
+            "Risconti attivi": "dare",
+            "Costi assicurativi": "avere"
+        },
+        "explanation": "L'assicurazione copre 4 mesi dell'anno corrente e 8 mesi dell'anno successivo. La quota futura (16.000€) va stornata dai costi (Avere) e sospesa nei Risconti Attivi (Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Acquisto macchinario il 01/03 per 10.000€. Vita utile 10 anni (10% annuo). Registra l'ammortamento del primo anno (pro-rata temporis).",
+        "availableAccounts": [
+            "Ammortamento Macchinari (1.000)",
+            "Ammortamento Macchinari (833,33)",
+            "Fondo Ammortamento (833,33)",
+            "Fondo Ammortamento (1.000)",
+            "Banca x c/c"
+        ],
+        "correctMapping": {
+            "Ammortamento Macchinari (833,33)": "dare",
+            "Fondo Ammortamento (833,33)": "avere"
+        },
+        "explanation": "La quota annuale sarebbe 1.000€, ma il bene è stato posseduto solo per 10 mesi (marzo-dicembre). Il calcolo corretto è 1.000 * 10/12 = 833,33€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "I soci costituiscono l'impresa versando 50.000€ sul conto corrente bancario.",
+        "availableAccounts": [
+            "Banca x c/c",
+            "Capitale Sociale",
+            "Cassa",
+            "Ricavi"
+        ],
+        "correctMapping": {
+            "Banca x c/c": "dare",
+            "Capitale Sociale": "avere"
+        },
+        "explanation": "L'operazione comporta un'entrata di liquidità (Banca in Dare) e la costituzione del Patrimonio Netto iniziale (Capitale Sociale in Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Fitti Attivi: canone annuo 36.000€, che matura nell'anno ma sarà incassato posticipatamente il 31/01 dell'anno successivo. Registra il Rateo Attivo al 31/12.",
+        "availableAccounts": [
+            "Ratei attivi",
+            "Fitti attivi",
+            "Banca x c/c",
+            "Risconti passivi"
+        ],
+        "correctMapping": {
+            "Ratei attivi": "dare",
+            "Fitti attivi": "avere"
+        },
+        "explanation": "Si deve rilevare un ricavo di competenza dell'anno (Fitti attivi in Avere) anche se non ancora incassato. La contropartita è un credito presunto, il Rateo Attivo (Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Incasso anticipato il 01/10 di 15.000€ per una consulenza che durerà 5 mesi (fino a fine febbraio). Registra la rettifica (Risconto Passivo) al 31/12.",
+        "availableAccounts": [
+            "Ricavi da consulenze",
+            "Risconti passivi",
+            "Banca x c/c",
+            "Ratei attivi"
+        ],
+        "correctMapping": {
+            "Ricavi da consulenze": "dare",
+            "Risconti passivi": "avere"
+        },
+        "explanation": "Il ricavo totale (15.000) copre 5 mesi. 2 mesi (gennaio-febbraio) sono di competenza futura. 15.000 * 2/5 = 6.000€. Si riduce il ricavo (Dare) e si accende il Risconto Passivo (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Al 31/03/N+1 si pagano gli interessi del mutuo (18.000€ totali) di cui 13.500€ erano già stati imputati come Rateo Passivo nell'anno N. Registra il pagamento.",
+        "availableAccounts": [
+            "Ratei passivi",
+            "Interessi passivi",
+            "Banca x c/c",
+            "Fondo rischi"
+        ],
+        "correctMapping": {
+            "Ratei passivi": "dare",
+            "Interessi passivi": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Al momento del pagamento si chiude il debito presunto dell'anno precedente (Ratei passivi in Dare), si registra la quota di competenza del nuovo anno (Interessi passivi in Dare) e l'uscita totale di banca."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Liquidazione IVA: IVA a Debito 1.000€, IVA a Credito 1.500€. Registra la chiusura dei conti IVA.",
+        "availableAccounts": [
+            "IVA a Debito",
+            "IVA a Credito",
+            "Erario c/IVA (a credito)",
+            "Banca x c/c"
+        ],
+        "correctMapping": {
+            "IVA a Debito": "dare",
+            "Erario c/IVA (a credito)": "dare",
+            "IVA a Credito": "avere"
+        },
+        "explanation": "Poiché il credito supera il debito, non c'è versamento. Si chiudono i mastrini (Debito in Dare, Credito in Avere) e l'eccedenza viene registrata come credito verso l'Erario in Dare."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Si rileva una perdita d'esercizio di 3.000€ derivante dal saldo del Conto Economico. Qual è la scrittura di destinazione a Patrimonio Netto?",
+        "availableAccounts": [
+            "Perdita d'esercizio",
+            "Conto Economico (Riepilogo)",
+            "Utile d'esercizio",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Perdita d'esercizio": "dare",
+            "Conto Economico (Riepilogo)": "avere"
+        },
+        "explanation": "Il Conto Economico ha un saldo Dare (costi > ricavi), quindi si chiude in Avere. La contropartita è la 'Perdita d'esercizio' che va in Dare, riducendo idealmente il Patrimonio Netto."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Macchinario acquistato il 1° Dicembre per 12.000€ (ammortamento annuo 10%). Calcola e registra l'ammortamento esatto dell'anno.",
+        "availableAccounts": [
+            "Ammortamento (100)",
+            "Ammortamento (1.200)",
+            "Fondo Ammortamento (100)",
+            "Fondo Ammortamento (1.200)",
+            "Ratei passivi"
+        ],
+        "correctMapping": {
+            "Ammortamento (100)": "dare",
+            "Fondo Ammortamento (100)": "avere"
+        },
+        "explanation": "La quota annuale sarebbe 1.200€, ma il bene è stato utilizzato solo 1 mese (dicembre). 1.200 / 12 = 100€. Si registra Ammortamento a Fondo Ammortamento per 100€."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Ricevuta fattura a Dicembre per servizi di manutenzione eseguiti a Dicembre (1.000€ + IVA), pagamento a 60 giorni. Come impatta il principio di competenza e quale conto usi?",
+        "availableAccounts": [
+            "Manutenzioni",
+            "IVA a Credito",
+            "Debiti v/fornitori",
+            "Ratei passivi",
+            "Risconti attivi"
+        ],
+        "correctMapping": {
+            "Manutenzioni": "dare",
+            "IVA a Credito": "dare",
+            "Debiti v/fornitori": "avere"
+        },
+        "explanation": "Essendo il servizio già erogato nell'esercizio, il costo è di competenza piena e va registrato subito come fattura da ricevere o debito fornitore, non come rateo (che si usa per contratti a cavallo d'anno)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "L'IVA è un'imposta che colpisce:",
+        "options": [
+            "Il reddito delle imprese",
+            "Il patrimonio immobiliare",
+            "Il valore aggiunto negli scambi di beni e servizi",
+            "Solo le esportazioni"
+        ],
+        "correctIndex": 2,
+        "explanation": "L'IVA (Imposta sul Valore Aggiunto) grava sugli scambi e colpisce l'incremento di valore del bene in ogni passaggio."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Chi è il soggetto che sopporta effettivamente l'onere dell'IVA (incapienza)?",
+        "options": [
+            "L'impresa produttrice",
+            "Il grossista",
+            "Il consumatore finale",
+            "Lo Stato"
+        ],
+        "correctIndex": 2,
+        "explanation": "L'IVA è neutrale per le imprese (che la scaricano sul cliente successivo); grava solo sul consumatore finale che non può detrarla."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Cosa significa che l'IVA è 'neutra' per l'impresa?",
+        "options": [
+            "Che l'impresa non deve versarla",
+            "Che per l'impresa non è né un costo né un ricavo, ma solo un debito/credito",
+            "Che l'aliquota è sempre 0%",
+            "Che viene rimborsata sempre immediatamente"
+        ],
+        "correctIndex": 1,
+        "explanation": "Essendo una partita di giro, l'IVA a credito compensa quella a debito, non influenzando il risultato economico (salvo casi di indetraibilità)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Qual è il presupposto 'Soggettivo' dell'IVA?",
+        "options": [
+            "Che l'operazione avvenga in Italia",
+            "Che l'operazione sia una cessione di beni o servizi",
+            "Che l'operazione sia effettuata nell'esercizio di imprese, arti o professioni",
+            "Che l'importo superi i 100 euro"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il presupposto soggettivo richiede che chi cede il bene o presta il servizio agisca come operatore economico (partita IVA), non come privato."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "Vendita di merci per 1.000€ + IVA 22%. Il cliente non paga subito.",
+        "availableAccounts": [
+            "Crediti v/clienti",
+            "Merci c/vendite",
+            "IVA a Debito",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Crediti v/clienti": "dare",
+            "Merci c/vendite": "avere",
+            "IVA a Debito": "avere"
+        },
+        "explanation": "Ricavo 1.000€ (Avere), IVA a Debito 220€ (Avere), Credito totale verso il cliente 1.220€ (Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "easy",
+        "text": "Acquisto materie prime per 500€ + IVA 22%.",
+        "availableAccounts": [
+            "Materie prime c/acq",
+            "IVA a Credito",
+            "Fornitori",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Materie prime c/acq": "dare",
+            "IVA a Credito": "dare",
+            "Fornitori": "avere"
+        },
+        "explanation": "Costo 500€ (Dare), IVA a Credito 110€ (Dare), Debito verso fornitore 610€ (Avere)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "easy",
+        "text": "Il conto 'Erario c/IVA' cosa accoglie?",
+        "options": [
+            "Solo l'IVA sulle vendite",
+            "Solo l'IVA sugli acquisti",
+            "Il saldo risultante dalla liquidazione periodica (debito o credito verso lo Stato)",
+            "Le tasse sui rifiuti"
+        ],
+        "correctIndex": 2,
+        "explanation": "Erario c/IVA è il conto di sintesi utilizzato nella liquidazione per determinare quanto versare o quanto riportare a credito."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Ricevuta fattura professionista: Onorario 1.000€, Contributo cassa 4% (40€), Imponibile 1.040€, IVA 22% su 1.040€ (228,8€). Totale 1.268,8€. Registra.",
+        "availableAccounts": [
+            "Costi per servizi / Consulenze",
+            "IVA a Credito",
+            "Fornitori (Professionisti)",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Costi per servizi / Consulenze": "dare",
+            "IVA a Credito": "dare",
+            "Fornitori (Professionisti)": "avere"
+        },
+        "explanation": "Il costo è l'onorario + cassa (1.040€) in Dare. IVA a credito (228,8€) in Dare. Debito totale (1.268,8€) in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Liquidazione IVA di Marzo: IVA vendite 5.000€, IVA acquisti 3.000€. Rileva il debito.",
+        "availableAccounts": [
+            "IVA a Debito",
+            "IVA a Credito",
+            "Erario c/IVA (da versare)",
+            "Banca"
+        ],
+        "correctMapping": {
+            "IVA a Debito": "dare",
+            "IVA a Credito": "avere",
+            "Erario c/IVA (da versare)": "avere"
+        },
+        "explanation": "Debito 5.000 (D) - Credito 3.000 (A) = Debito residuo 2.000 (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Versamento dell'IVA di Marzo (2.000€) tramite F24 bancario.",
+        "availableAccounts": [
+            "Erario c/IVA (da versare)",
+            "Banca x c/c",
+            "Cassa",
+            "IVA a Debito"
+        ],
+        "correctMapping": {
+            "Erario c/IVA (da versare)": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Si chiude il debito verso l'Erario (Dare) e si riduce la banca (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Liquidazione IVA Aprile: IVA vendite 2.000€, IVA acquisti 2.500€. Rileva il credito.",
+        "availableAccounts": [
+            "IVA a Debito",
+            "IVA a Credito",
+            "Erario c/IVA (a credito)",
+            "Banca"
+        ],
+        "correctMapping": {
+            "IVA a Debito": "dare",
+            "Erario c/IVA (a credito)": "dare",
+            "IVA a Credito": "avere"
+        },
+        "explanation": "Debito 2.000 (D) - Credito 2.500 (A). Manca 500 in Dare per bilanciare -> Erario c/IVA a credito."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "medium",
+        "text": "L'IVA a Credito è una voce di...",
+        "options": [
+            "Costo",
+            "Ricavo",
+            "Attività (Stato Patrimoniale)",
+            "Passività (Stato Patrimoniale)"
+        ],
+        "correctIndex": 2,
+        "explanation": "Rappresenta un credito verso lo Stato che l'azienda vanta per aver pagato l'IVA ai fornitori. È un'Attività."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Nota di credito ricevuta da fornitore per reso merce diffettosa: 100€ + IVA 22%. Come si registra?",
+        "availableAccounts": [
+            "Fornitori",
+            "Resi su acquisti",
+            "IVA a Credito (o variazione)",
+            "IVA a Debito"
+        ],
+        "correctMapping": {
+            "Fornitori": "dare",
+            "Resi su acquisti": "avere",
+            "IVA a Credito (o variazione)": "avere"
+        },
+        "explanation": "Diminuisce il debito verso fornitori (Dare). Si registra una rettifica di costo (Resi su acquisti in Avere) e si storna l'IVA a credito (Avere) - oppure si usa IVA a Debito come tecnica."
+    },
+    {
+        "type": "journal",
+        "difficulty": "medium",
+        "text": "Acconto versato a fornitore di 1.220€ (IVA inclusa 22%). Registra l'operazione e l'IVA.",
+        "availableAccounts": [
+            "Fornitori c/acconti",
+            "IVA a Credito",
+            "Banca x c/c",
+            "Fornitori"
+        ],
+        "correctMapping": {
+            "Fornitori c/acconti": "dare",
+            "IVA a Credito": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "Dall'uscita di 1.220€ (Banca Avere), scorporiamo l'IVA (220€ Dare) e l'acconto netto (1.000€ Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Liquidazione IVA con credito precedente: IVA Debito Mese 4.000€, IVA Credito Mese 3.000€, Credito Mese Precedente 1.500€. Calcola saldo.",
+        "availableAccounts": [
+            "Erario c/IVA (a credito)",
+            "Erario c/IVA (da versare)",
+            "IVA a Debito",
+            "IVA a Credito"
+        ],
+        "correctMapping": {
+            "IVA a Debito": "dare",
+            "Erario c/IVA (a credito)": "dare",
+            "IVA a Credito": "avere",
+            "Erario c/IVA (credito prec)": "avere"
+        },
+        "explanation": "Debito 4.000 (D). Crediti totali: 3.000 (mese) + 1.500 (prec) = 4.500 (A). Risultato: Credito finale di 500€ (Dare)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Acquisto autovettura a deducibilità limitata (40%). Costo 20.000€ + IVA 4.400€. L'IVA indetraibile (60%) diventa costo. Registra.",
+        "availableAccounts": [
+            "Automezzi",
+            "IVA a Credito",
+            "Fornitori",
+            "Banca"
+        ],
+        "correctMapping": {
+            "Automezzi": "dare",
+            "IVA a Credito": "dare",
+            "Fornitori": "avere"
+        },
+        "explanation": "IVA detraibile: 4.400 * 40% = 1.760€ (Dare). IVA indetraibile: 2.640€ si somma al costo dell'auto. Automezzi = 20.000 + 2.640 = 22.640€ (Dare). Fornitori 24.400€ (Avere)."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Acquisto servizi intra-UE (Reverse Charge). Fattura estera di 1.000€. Bisogna integrare l'IVA al 22%.",
+        "availableAccounts": [
+            "Costi per servizi",
+            "Fornitori Esteri",
+            "IVA a Credito",
+            "IVA a Debito"
+        ],
+        "correctMapping": {
+            "Costi per servizi": "dare",
+            "IVA a Credito": "dare",
+            "Fornitori Esteri": "avere",
+            "IVA a Debito": "avere"
+        },
+        "explanation": "Si registra il costo (1.000) e il debito vs fornitore (1.000). Poi si registra l'IVA sia in Dare (Credito) che in Avere (Debito) per neutralizzarla finanziariamente ma evidenziarla."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Acconto IVA di Dicembre. Si versa un acconto di 800€ calcolato sul storico. Registra il versamento.",
+        "availableAccounts": [
+            "Erario c/acconto IVA",
+            "Banca x c/c",
+            "IVA a Debito",
+            "Cassa"
+        ],
+        "correctMapping": {
+            "Erario c/acconto IVA": "dare",
+            "Banca x c/c": "avere"
+        },
+        "explanation": "È un credito verso l'Erario per un versamento anticipato. Erario c/acconto IVA in Dare, Banca in Avere."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Vendita cespite (Macchinario) usato a 5.000€ + IVA 22%. Il macchinario era totalmente ammortizzato (Valore contabile 0).",
+        "availableAccounts": [
+            "Crediti v/clienti (o Crediti diversi)",
+            "Plusvalenza",
+            "IVA a Debito",
+            "Macchinario"
+        ],
+        "correctMapping": {
+            "Crediti v/clienti (o Crediti diversi)": "dare",
+            "Plusvalenza": "avere",
+            "IVA a Debito": "avere"
+        },
+        "explanation": "Essendo il valore contabile 0, tutto il prezzo di vendita è Plusvalenza (Ricavo). Crediti 6.100 (D), Plusvalenza 5.000 (A), IVA 1.100 (A)."
+    },
+    {
+        "type": "quiz",
+        "difficulty": "hard",
+        "text": "Se l'IVA a debito non viene versata entro la scadenza...",
+        "options": [
+            "Si trasforma in credito",
+            "Resta un debito verso l'Erario, ma si applicano sanzioni e interessi",
+            "Viene condonata automaticamente",
+            "Diventa un costo deducibile"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il mancato pagamento non estingue il debito, che rimane iscritto nel passivo (spesso riclassificato come Debiti tributari scaduti) e matura oneri aggiuntivi."
+    },
+    {
+        "type": "journal",
+        "difficulty": "hard",
+        "text": "Chiusura annuale conti IVA: saldo finale a credito di 4.000€. Si decide di chiedere il rimborso per 2.000€ e riportare a nuovo il resto.",
+        "availableAccounts": [
+            "Erario c/IVA a rimborso",
+            "Erario c/IVA (a credito)",
+            "Banca",
+            "Ricavi vari"
+        ],
+        "correctMapping": {
+            "Erario c/IVA a rimborso": "dare",
+            "Erario c/IVA (a credito)": "avere"
+        },
+        "explanation": "Si sposta parte del credito dal conto generico 'Erario c/IVA' a un conto specifico 'Erario c/IVA a rimborso' per evidenziare la richiesta."
+    }
+]
