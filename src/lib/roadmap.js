@@ -3,13 +3,9 @@
 export const ROADMAPS = {
   // --- CONTABILITÀ (INVARIATO) ---
   accounting: [
-    { id: "lvl_1_base", title: "Le Basi", subtitle: "Dare, Avere e Conti", icon: "🏠", difficulty: "easy", indent: 0, req: null },
-    { id: "lvl_2_pd", title: "Partita Doppia", subtitle: "Il metodo fondamentale", icon: "⚖️", difficulty: "medium", indent: -1, req: "lvl_1_base" },
-    { id: "lvl_3_iva", title: "Mondo IVA", subtitle: "Liquidazione e registri", icon: "💸", difficulty: "medium", indent: 1, req: "lvl_2_pd" },
-    { id: "lvl_4_assestamento", title: "Assestamento", subtitle: "Competenza economica", icon: "🧩", difficulty: "hard", indent: 0, req: "lvl_3_iva" },
-    { id: "lvl_5_ratei", title: "Ratei & Risconti", subtitle: "Il tempo è denaro", icon: "⏳", difficulty: "hard", indent: -1, req: "lvl_4_assestamento" },
-    { id: "lvl_6_ammortamenti", title: "Ammortamenti", subtitle: "Quote e piani", icon: "📉", difficulty: "hard", indent: 1, req: "lvl_5_ratei" },
-    { id: "lvl_7_chiusura", title: "Chiusura", subtitle: "Stato Patrimoniale", icon: "🏁", difficulty: "boss", indent: 0, req: "lvl_6_ammortamenti" }
+    { id: "acc-01-iva", title: "L'IVA", subtitle: "L'IVA copia.pdf", icon: "💸", difficulty: "easy", indent: 0, req: null },
+    { id: "acc-02-ratei", title: "Ratei e Risconti", subtitle: "Ratei e Risconti copia.pdf", icon: "⏳", difficulty: "medium", indent: 0, req: "acc-01-iva" },
+    { id: "acc-03-ammortamenti", title: "Ammortamenti", subtitle: "La contabilità e gli ammortamenti.pdf", icon: "📉", difficulty: "hard", indent: 0, req: "acc-02-ratei" }
   ],
 
   // --- CLOUD COMPUTING (17 LEZIONI) ---
@@ -50,3 +46,4 @@ export const ROADMAPS = {
     { id: "c-09-terraform", title: "Terraform", subtitle: "Lecture 09", icon: "🏗️", difficulty: "boss", indent: 0, req: "c-09-serverless" }
   ]
 };
+console.log("🔹 Roadmap JS Loaded - v2026-01-16-FIX");
