@@ -175,12 +175,10 @@ export default function StudentDashboard() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <h1 className="bigTitle" style={{ fontSize: 28, margin: 0 }}>Bentornata, {studentData.name.split(' ')[0]} 👋</h1>
             <span style={{ fontSize: 10, fontWeight: 800, background: themeBadgeBg, color: themeBadgeText, padding: '4px 8px', borderRadius: 6, border: `1px solid ${themeColor}` }}>
-              {isCloud ? 'CLOUD' : 'CONTA'}
+              {isCloud ? 'CLOUD' : 'CONTABILITÀ'}
             </span>
           </div>
-          <div className="badge" style={{ marginTop: 8, background: themeColor, color: '#fff' }}>
-            🏅 {playerTitle}
-          </div>
+
         </div>
         <div style={{ textAlign: 'right' }}>
           <div style={{ fontSize: 32, fontWeight: 900, color: themeColor }}>{treeProgress}%</div>
