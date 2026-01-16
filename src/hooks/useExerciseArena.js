@@ -43,23 +43,23 @@ function exerciseReducer(state, action) {
       return { ...state, errorMsg: action.payload, loading: false };
 
     case ACTIONS.SET_QUESTIONS:
-      return { 
-        ...state, 
+      return {
+        ...state,
         questionPool: action.payload,
-        loading: false 
+        loading: false
       };
 
     case ACTIONS.SET_CURRENT_QUESTION:
-      return { 
-        ...state, 
+      return {
+        ...state,
         currentQuestion: action.payload,
-        questionCount: state.questionCount + 1 
+        questionCount: state.questionCount + 1
       };
 
     case ACTIONS.SELECT_OPTION:
-      return { 
-        ...state, 
-        selectedOption: action.payload 
+      return {
+        ...state,
+        selectedOption: action.payload
       };
 
     case ACTIONS.ADD_JOURNAL_ENTRY:
@@ -67,17 +67,17 @@ function exerciseReducer(state, action) {
         entry => entry.account === action.payload.account && entry.type === action.payload.type
       );
       if (exists || state.isChecked) return state;
-      
-      return { 
-        ...state, 
-        journalEntries: [...state.journalEntries, action.payload] 
+
+      return {
+        ...state,
+        journalEntries: [...state.journalEntries, action.payload]
       };
 
     case ACTIONS.REMOVE_JOURNAL_ENTRY:
       if (state.isChecked) return state;
-      return { 
-        ...state, 
-        journalEntries: state.journalEntries.filter((_, idx) => idx !== action.payload) 
+      return {
+        ...state,
+        journalEntries: state.journalEntries.filter((_, idx) => idx !== action.payload)
       };
 
     case ACTIONS.CHECK_ANSWER:
@@ -131,20 +131,20 @@ export function useExerciseArena(levelId, onComplete, studentId) {
     const text = q.text || q.question || "Domanda senza testo";
     const difficulty = (q.difficulty || "medium").toLowerCase();
     const explanation = q.explanation || "Nessuna spiegazione disponibile";
-    
+
     let options = q.options || [];
     let correctIndex = q.correctIndex;
-    
+
     if (type === 'multiple' && options.length > 0 && typeof options[0] === 'object') {
-       correctIndex = options.findIndex(o => o.correct === true);
-       options = options.map(o => o.text);
+      correctIndex = options.findIndex(o => o.correct === true);
+      options = options.map(o => o.text);
     }
-    
+
     let availableAccounts = q.availableAccounts || [];
     if (type === 'journal' && availableAccounts.length === 0 && q.correctMapping) {
-        availableAccounts = Object.keys(q.correctMapping);
+      availableAccounts = Object.keys(q.correctMapping);
     }
-    
+
     return { ...q, text, type, options, correctIndex, availableAccounts, difficulty, explanation };
   }, []);
 
@@ -168,10 +168,10 @@ export function useExerciseArena(levelId, onComplete, studentId) {
     try {
       const { collection, query, where, getDocs } = await import('firebase/firestore');
       const { db } = await import('../lib/firebase');
-      
+
       const q = query(collection(db, "questions"), where("levelId", "==", levelId));
       const snap = await getDocs(q);
-      
+
       if (snap.empty) {
         dispatch({ type: ACTIONS.SET_ERROR, payload: `Nessuna domanda trovata per il livello: ${levelId}` });
         return;
@@ -187,8 +187,16 @@ export function useExerciseArena(levelId, onComplete, studentId) {
         dispatch({ type: ACTIONS.SET_ERROR, payload: "Database domande vuoto o insufficiente." });
       }
 
-    } catch (error) { 
-      console.error(error); 
+    } catch (error) {
+      console.error(error);
+      // GESTIONE SPECIFICA ERRORE CHUNK (Aggiornamento APP)
+      if (error.message?.includes('Failed to fetch dynamically imported module') ||
+        error.message?.includes('Importing a module script failed')) {
+        console.log("🔄 Chunk mancante rilevato nel hook. Ricarico...");
+        setTimeout(() => window.location.reload(), 500); // Leggero delay per evitare loop istantanei
+        return;
+      }
+
       dispatch({ type: ACTIONS.SET_ERROR, payload: "Errore DB: " + error.message });
     }
   }, [levelId, normalizeQuestion, pickNextQuestion]);
@@ -202,9 +210,9 @@ export function useExerciseArena(levelId, onComplete, studentId) {
 
   // Handler per aggiungere entry journal
   const addJournalEntry = useCallback((accountName, type) => {
-    dispatch({ 
-      type: ACTIONS.ADD_JOURNAL_ENTRY, 
-      payload: { account: accountName, type } 
+    dispatch({
+      type: ACTIONS.ADD_JOURNAL_ENTRY,
+      payload: { account: accountName, type }
     });
     playSoundHelper('pop');
   }, []);
@@ -218,7 +226,7 @@ export function useExerciseArena(levelId, onComplete, studentId) {
   const checkAnswer = useCallback(() => {
     const q = state.currentQuestion;
     let correct = false;
-    
+
     if (q.type === 'multiple') {
       // 🔥 FIX: Se nessuna opzione selezionata, considera come errore
       if (state.selectedOption === null || state.selectedOption === undefined) {
@@ -247,11 +255,11 @@ export function useExerciseArena(levelId, onComplete, studentId) {
     // Incrementa contatore esercizi
     exerciseCount.current++;
 
-    dispatch({ 
-      type: ACTIONS.CHECK_ANSWER, 
-      payload: { 
+    dispatch({
+      type: ACTIONS.CHECK_ANSWER,
+      payload: {
         isCorrect: correct,
-        questionSnapshot: { 
+        questionSnapshot: {
           text: q.text,
           explanation: q.explanation
         }
@@ -259,12 +267,12 @@ export function useExerciseArena(levelId, onComplete, studentId) {
     });
 
     // 🔥 DEBUG: Log per verificare il salvataggio errori
-    console.log("🔍 Risposta verificata:", { 
-      correct, 
-      questionId: q.id, 
+    console.log("🔍 Risposta verificata:", {
+      correct,
+      questionId: q.id,
       questionText: q.text,
       selectedOption: state.selectedOption,
-      journalEntries: state.journalEntries 
+      journalEntries: state.journalEntries
     });
 
     // Aggiorna attività giornaliera
@@ -283,29 +291,29 @@ export function useExerciseArena(levelId, onComplete, studentId) {
     console.log("🚨 CRITICAL - nextStep chiamato");
     console.log("🚨 questionCount:", state.questionCount);
     console.log("🚨 MAX_QUESTIONS:", MAX_QUESTIONS);
-    
-    if (state.questionCount >= MAX_QUESTIONS) { 
+
+    if (state.questionCount >= MAX_QUESTIONS) {
       console.log("🚨 Chiamo finishLevel da nextStep");
-      finishLevel(); 
-      return; 
+      finishLevel();
+      return;
     }
 
     const nextDiff = calculateNextDifficulty(state.currentDifficulty, state.isCorrect);
-    
+
     const playedIds = [...state.history.map(h => h.questionId), state.currentQuestion.id];
     const nextQ = pickNextQuestion(state.questionPool, nextDiff, playedIds);
-    
+
     if (nextQ) {
       dispatch({ type: ACTIONS.RESET_QUESTION });
-      dispatch({ 
-        type: ACTIONS.NEXT_QUESTION, 
-        payload: { 
-          nextDifficulty: nextDiff, 
-          nextQuestion: nextQ 
-        } 
+      dispatch({
+        type: ACTIONS.NEXT_QUESTION,
+        payload: {
+          nextDifficulty: nextDiff,
+          nextQuestion: nextQ
+        }
       });
-    } else { 
-      finishLevel(); 
+    } else {
+      finishLevel();
     }
   }, [state, pickNextQuestion]);
 
@@ -313,10 +321,10 @@ export function useExerciseArena(levelId, onComplete, studentId) {
   const finishLevel = useCallback(() => {
     const correctCount = state.history.filter(h => h.isCorrect).length;
     const score = Math.round((correctCount / state.history.length) * 100);
-    
+
     // Calcola tempo di studio in minuti
     const studyTimeMinutes = Math.round((Date.now() - sessionStartTime.current) / (1000 * 60));
-    
+
     // 🔥 CRITICAL DEBUG: Verifica chiamata finishLevel
     console.log("🚨 CRITICAL - finishLevel chiamato");
     console.log("🚨 history length:", state.history.length);
@@ -324,7 +332,7 @@ export function useExerciseArena(levelId, onComplete, studentId) {
     console.log("🚨 score:", score);
     console.log("🚨 levelId:", levelId);
     console.log("🚨 studyTimeMinutes:", studyTimeMinutes);
-    
+
     // Aggiorna attività giornaliera con tempo di studio
     if (studentId) {
       updateDailyActivity(studentId, {
@@ -332,7 +340,7 @@ export function useExerciseArena(levelId, onComplete, studentId) {
         studyTime: studyTimeMinutes
       }).catch(console.error);
     }
-    
+
     onComplete({ levelId, scorePercentage: score, history: state.history });
   }, [state.history, levelId, onComplete, studentId]);
 
@@ -345,7 +353,7 @@ export function useExerciseArena(levelId, onComplete, studentId) {
     // Stato
     ...state,
     MAX_QUESTIONS,
-    
+
     // Azioni
     initArena,
     handleOptionSelect,
