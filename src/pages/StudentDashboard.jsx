@@ -180,20 +180,10 @@ export default function StudentDashboard() {
           </div>
 
         </div>
-        <div style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: 32, fontWeight: 900, color: themeColor }}>{treeProgress}%</div>
-          <div className="muted" style={{ fontSize: 12, fontWeight: 700 }}>SKILL TREE</div>
-        </div>
+
       </div>
 
-      <div style={{ background: '#e2e8f0', borderRadius: 10, height: 8, overflow: 'hidden', marginBottom: 40 }}>
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: `${treeProgress}%` }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-          style={{ background: isCloud ? '#3b82f6' : 'var(--accent)', height: '100%' }}
-        />
-      </div>
+
 
       <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: 24 }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
