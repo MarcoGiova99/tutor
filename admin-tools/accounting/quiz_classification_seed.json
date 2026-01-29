@@ -1,0 +1,290 @@
+[
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Crediti v/Clienti",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VF"
+        },
+        "explanation": "I Crediti verso Clienti rappresentano un diritto a riscuotere denaro, quindi sono una Variazione Finanziaria e vanno nell'Attivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Merci c/Acquisti",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "L'acquisto di merci rappresenta un Costo d'esercizio, quindi è una Variazione Economica Negativa e va nel DARE del Conto Economico."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Debiti v/Fornitori",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VF"
+        },
+        "explanation": "I Debiti verso Fornitori rappresentano un obbligo di pagare denaro, quindi sono una Variazione Finanziaria e vanno nel Passivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Ricavi delle Vendite",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VE"
+        },
+        "explanation": "Le vendite generano un Ricavo d'esercizio, quindi sono una Variazione Economica Positiva e vanno in AVERE del Conto Economico."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Banca c/c",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VF"
+        },
+        "explanation": "Il conto Banca rappresenta liquidità disponibile, quindi è una Variazione Finanziaria e va nell'Attivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Mutui Passivi",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VF"
+        },
+        "explanation": "I Mutui Passivi sono debiti a medio/lungo termine, quindi sono una Variazione Finanziaria e vanno nel Passivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Salari e Stipendi",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "I Salari e Stipendi sono costi per il personale, quindi sono una Variazione Economica Negativa e vanno in DARE del Conto Economico."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Riserva Legale",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VF"
+        },
+        "explanation": "La Riserva Legale è una parte di utili accantonata per legge, fa parte del Patrimonio Netto (Passivo come fonte)."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Riserva Straordinaria",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VF"
+        },
+        "explanation": "La Riserva Straordinaria è una parte di utili accantonata facoltativamente, fa parte del Patrimonio Netto."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Cauzioni Attive",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VF"
+        },
+        "explanation": "Le Cauzioni Attive sono crediti per somme versate a garanzia."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Cauzioni Passive",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VF"
+        },
+        "explanation": "Le Cauzioni Passive sono debiti per somme ricevute a garanzia."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Obbligazionisti c/Sottoscrizione",
+        "difficulty": "hard",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VF"
+        },
+        "explanation": "Credito verso chi ha sottoscritto obbligazioni ma non le ha ancora versate."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Oneri Sociali",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Gli Oneri Sociali sono costi accessori al personale (contributi INPS/INAIL)."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Spese di Pubblicità",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per servizi pubblicitari e promozionali."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Canoni Leasing",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per il godimento di beni di terzi in leasing."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Manutenzioni e Riparazioni",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per servizi di manutenzione ordinaria."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Consulenze Legali e Notarili",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per servizi professionali."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Costi di Vigilanza",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per servizi di sicurezza e vigilanza."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Energia Elettrica",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per utenze e forniture."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Assicurazioni",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per premi assicurativi."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Commissioni Bancarie",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per servizi bancari."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Materie Prime c/Acquisti",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo d'esercizio per l'acquisto di materie prime."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Prodotti Finiti c/Vendite",
+        "difficulty": "easy",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VE"
+        },
+        "explanation": "Ricavo d'esercizio dalla vendita di prodotti realizzati internamente."
+    },
+    {
+        "type": "classification",
+        "text": "Analizza il seguente conto:",
+        "account": "Provvigioni Passive",
+        "difficulty": "medium",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VE"
+        },
+        "explanation": "Costo per servizi di intermediazione commerciale."
+    }
+]

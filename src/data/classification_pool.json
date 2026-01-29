@@ -1,0 +1,662 @@
+[
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Mutui Passivi",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "I Mutui Passivi rappresentano un debito di finanziamento verso la banca (VF-), quindi vanno nel Passivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Crediti v/Clienti",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "I Crediti v/Clienti sono un diritto a riscuotere denaro (VF+), quindi vanno nell'Attivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Salari e Stipendi",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Salari e Stipendi rappresenta il costo del lavoro dipendente (VE-), quindi va nei Costi del Conto economico."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Merci c/Vendite",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "Merci c/Vendite rappresenta un ricavo derivante dalla vendita di beni (VE+), quindi va nei Ricavi del Conto Economico."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "TFR",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "Il TFR (Trattamento di Fine Rapporto) è un debito dell'azienda verso i dipendenti (VF-), da pagare alla fine del rapporto di lavoro."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Banca X c/c",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "Se il saldo è attivo, la banca rappresenta disponibilità liquida (VF+), quindi va nell'Attivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Debiti v/Fornitori",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "I Debiti v/Fornitori rappresentano un obbligo di pagamento (VF-), quindi vanno nel Passivo dello Stato Patrimoniale."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Impianti e Macchinari",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VEN"
+        },
+        "explanation": "Impianti e Macchinari è un costo pluriennale (VE-) che viene sospeso e attivato nello Stato Patrimoniale (Immobilizzazioni)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Fondo Amm.to Impianti",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VEP"
+        },
+        "explanation": "Il Fondo Ammortamento è una rettifica del valore del bene (VE+ indiretta che riduce un costo), e si trova nel Passivo (o in detrazione all'Attivo)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Ammortamento Impianti",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "L'Ammortamento è un costo di competenza dell'esercizio (VE-), quindi va nel Conto Economico."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Ratei Attivi",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "I Ratei Attivi sono quote di credito (VF+) per ricavi di competenza maturati ma non ancora liquidati."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Ratei Passivi",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "I Ratei Passivi sono quote di debito (VF-) per costi di competenza maturati ma non ancora liquidati."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Risconti Attivi",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VEN"
+        },
+        "explanation": "I Risconti Attivi sono costi sospesi (VE- che diventa attività), ovvero pagati in anticipo ma di competenza futura."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Risconti Passivi",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VEP"
+        },
+        "explanation": "I Risconti Passivi sono ricavi sospesi (VE+ che diventa passività), ovvero incassati in anticipo ma di competenza futura."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Plusvalenze",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "Le Plusvalenze sono ricavi straordinari (VE+) derivanti dalla vendita di un cespite a un prezzo superiore al valore contabile."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Minusvalenze",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Le Minusvalenze sono costi straordinari (VE-) derivanti dalla vendita di un cespite a un prezzo inferiore al valore contabile."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Sopravvenienze Attive",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "Le Sopravvenienze Attive sono ricavi imprevisti (VE+) o la riduzione imprevista di debiti."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Sopravvenienze Passive",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Le Sopravvenienze Passive sono costi imprevisti (VE-) o la riduzione imprevista di crediti."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Interessi Passivi",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Gli Interessi Passivi sono il costo del denaro preso in prestito (VE-), quindi vanno nel Conto Economico."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Interessi Attivi",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "Gli Interessi Attivi sono un ricavo finanziario (VE+), generato dai depositi bancari o crediti."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Capitale Sociale",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VEP"
+        },
+        "explanation": "Il Capitale Sociale rappresenta il debito della società verso i soci (Patrimonio Netto), che è una fonte di finanziamento interna (VE+ di capitale)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Utile d'Esercizio",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VEP"
+        },
+        "explanation": "L'Utile d'Esercizio è un incremento del Patrimonio Netto (VE+ economica) che si colloca nel Passivo dello SP come fonte ideale."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Perdita d'Esercizio",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VEN"
+        },
+        "explanation": "La Perdita d'Esercizio riduce il Patrimonio Netto (VE- economica), collocandosi idealmente con segno meno nel Passivo (o nel Netto)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Resi su Vendite",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "I Resi su Vendite sono una rettifica negativa di ricavo, quindi si comportano come un Costo (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Resi su Acquisti",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "I Resi su Acquisti sono una rettifica negativa di costo, quindi si comportano come un Ricavo (VE+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "IVA a Nostro Credito",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "L'IVA a Credito è un diritto verso l'Erario (VF+), quindi va nell'Attivo."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "IVA a Nostro Debito",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "L'IVA a Debito è un obbligo verso l'Erario (VF-), quindi va nel Passivo."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Erario c/Ritenute",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "Erario c/ritenute da versare è un debito verso lo Stato (VF-) per le ritenute fiscali operate."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Cambiali Attive",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "Le Cambiali Attive sono titoli di credito che rappresentano denaro da riscuotere (VF+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Cambiali Passive",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "Le Cambiali Passive sono impegni cambiari a pagare una somma (VF-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Fitti Passivi",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "I Fitti Passivi sono il costo per l'utilizzo di beni di terzi (VE-), quindi vanno nel Conto Economico."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Fitti Attivi",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "I Fitti Attivi sono un ricavo derivante dalla locazione di propri immobili (VE+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Automezzi",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VEN"
+        },
+        "explanation": "Automezzi è un costo pluriennale (Immobilizzazione Materiale) che va nell'Attivo dello SP."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Brevetti",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VEN"
+        },
+        "explanation": "Brevetti è un costo pluriennale (Immobilizzazione Immateriale) che va nell'Attivo dello SP."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Partecipazioni",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "Le Partecipazioni sono investimenti finanziari in altre società (Attività Finanziarie), quindi VF+ (o VE costi pluriennali a seconda dell'ottica, ma prevale l'aspetto investimento/attivo)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Svalutazione Crediti",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "La Svalutazione Crediti è un costo presunto (VE-) per possibili mancati incassi."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Fondo Rischi su Crediti",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VEP"
+        },
+        "explanation": "Il Fondo Rischi è una rettifica del valore dei crediti (o passività presunta), iscritta nel Passivo."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Merci c/Acquisti",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Merci c/Acquisti è un costo d'esercizio (VE-) per l'acquisto di beni."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Ribassi e Abbuoni Attivi",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "I Ribassi Attivi sono rettifiche di costo a nostro favore, quindi si comportano come Ricavi (VE+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Ribassi e Abbuoni Passivi",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "I Ribassi Passivi sono sconti concessi ai clienti (rettifiche di ricavo), quindi si comportano come Costi (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Prestito Obbligazionario",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "Il Prestito Obbligazionario è un debito di finanziamento a medio/lungo termine verso gli obbligazionisti (VF-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Cassa Assegni",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "Gli assegni in cassa sono assimilati al denaro liquido (VF+), quindi Attivo dello SP."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Azionisti c/Sottoscrizione",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "È un credito della società verso i soci che hanno sottoscritto il capitale ma non ancora versato (VF+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Riserva Legale",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VEP"
+        },
+        "explanation": "La Riserva Legale è una parte di utili accantonata per legge, fa parte del Patrimonio Netto (Passivo come fonte)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Riserva Straordinaria",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VEP"
+        },
+        "explanation": "La Riserva Straordinaria è una parte di utili accantonata facoltativamente, fa parte del Patrimonio Netto."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Cauzioni Attive",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "Le Cauzioni Attive sono crediti per somme versate a garanzia (VF+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Cauzioni Passive",
+        "correct": {
+            "destination": "SP",
+            "section": "passive",
+            "nature": "VFP"
+        },
+        "explanation": "Le Cauzioni Passive sono debiti per somme ricevute a garanzia (VF-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Obbligazionisti c/Sottoscrizione",
+        "correct": {
+            "destination": "SP",
+            "section": "active",
+            "nature": "VFA"
+        },
+        "explanation": "Credito verso chi ha sottoscritto obbligazioni ma non le ha ancora versate (VF+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Oneri Sociali",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Gli Oneri Sociali sono costi accessori al personale (contributi INPS/INAIL a carico azienda) (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Spese di Pubblicità",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per servizi pubblicitari e promozionali (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Canoni Leasing",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per il godimento di beni di terzi in leasing (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Manutenzioni e Riparazioni",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per servizi di manutenzione ordinaria (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Consulenze Legali e Notarili",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per servizi professionali (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Costi di Vigilanza",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per servizi di sicurezza e vigilanza (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Energia Elettrica",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per utenze e forniture (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Assicurazioni",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per premi assicurativi (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Commissioni Bancarie",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per servizi bancari (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Materie Prime c/Acquisti",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo d'esercizio per l'acquisto di materie prime (VE-)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Prodotti Finiti c/Vendite",
+        "correct": {
+            "destination": "CE",
+            "section": "revenue",
+            "nature": "VEP"
+        },
+        "explanation": "Ricavo d'esercizio dalla vendita di prodotti realizzati internamente (VE+)."
+    },
+    {
+        "type": "classification",
+        "text": "Classifica il seguente conto:",
+        "account": "Provvigioni Passive",
+        "correct": {
+            "destination": "CE",
+            "section": "cost",
+            "nature": "VEN"
+        },
+        "explanation": "Costo per servizi di intermediazione commerciale (VE-)."
+    }
+]
